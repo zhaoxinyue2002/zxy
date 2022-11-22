@@ -1,0 +1,62 @@
+/*font family*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet');
+/* theme background color*/
+/* light themes color*/
+/* disable buuton*/
+/* backgroung in full color*/
+/* tb color*/
+/* tab text color*/
+/* button color*/
+/* button garident color*/
+/* login diable buttn color*/
+/*  fontsize*/
+/* text align*/
+/* font weight*/
+/* fontfamily*/
+/* direction text*/
+/* text and label color*/
+/* table */
+/* postion*/
+/*media queries*/
+/* regression screen scss*/
+/* active button color*/
+/* inactive button*/
+/* inactive tab*/
+/****************** report in load more button color******************/
+/* ul and li start*/
+.list_menus_li {
+  border-bottom: 1px solid #ffffff52;
+  padding: 12px 0px;
+  font-weight: bold;
+  font-size: 0.81rem; }
+
+.list_menus_li:hover {
+  text-decoration: none; }
+
+.list-group-item.active {
+  color: #EBBC4C;
+  border: none;
+  background: url("../img/new-menu-highlight.svg") no-repeat top right !important; }
+
+/* end ul and li*/
+/*side bar fixed start*/
+.logo_section_common {
+  padding-top: 41px;
+  /* padding-bottom: 27px; */
+  position: fixed;
+  /* top: 10px; */
+  position: fixed;
+  width: 20%; }
+
+/* media queries start*/
+/*side bar*/
+/*100 to 1366*/
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  .logo_section_common {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important; }
+
+  .dashbaord .input_group_section {
+    padding-bottom: 11px; } }
+
+/*# sourceMappingURL=common.css.map */

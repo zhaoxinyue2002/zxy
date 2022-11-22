@@ -1,0 +1,314 @@
+/*font family*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet');
+/* theme background color*/
+/* light themes color*/
+/* disable buuton*/
+/* backgroung in full color*/
+/* tb color*/
+/* tab text color*/
+/* button color*/
+/* button garident color*/
+/* login diable buttn color*/
+/*  fontsize*/
+/* text align*/
+/* font weight*/
+/* fontfamily*/
+/* direction text*/
+/* text and label color*/
+/* table */
+/* postion*/
+/*media queries*/
+/* navabar section start*/
+.login_screen .bg-light {
+  background-color: #000000 !important;
+  /*padding-top: 31px;*/ }
+
+.login_screen .navbar-brand {
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  font-weight: 700; }
+
+.login_screen .navbar-brand:hover {
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  font-weight: 700; }
+
+.login_screen .nav-link {
+  color: #FFFFFF !important;
+  font-size: 0.7rem;
+  font-weight: 700; }
+
+.login_screen .active-class {
+  color: #EBBC4C !important;
+  font-size: 0.7rem; }
+
+/* body section start*/
+body {
+  background-color: #000000;
+  font-family: Arial; }
+
+/*.login_screen .regression
+{
+	    position: absolute;
+    top: 33px;
+    bottom: 33px;
+    left: 33px;
+    right: 33px;
+ 
+    margin: 0 auto;
+}
+*/
+.login_screen .login_paragraph {
+  padding-top: calc(100% - 286px);
+  padding-bottom: calc(100% - 286px); }
+
+.login_screen .logo-images {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  font-weight: 600; }
+
+.login_screen .login-text {
+  color: #ffffff69;
+  font-size: 0.7rem;
+  margin-bottom: 0px;
+  font-weight: 600; }
+
+.login_screen .login-text-about {
+  color: #ffffff69;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-buttom: 29px; }
+
+.login_screen .email_input {
+  margin-bottom: 18px !important; }
+
+.login_screen .password_input {
+  margin-bottom: 20px !important; }
+
+/* text box*/
+.login_screen .user-nmaes {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  padding: 0px;
+  height: 0.7rem;
+  direction: rtl;
+  font-weight: 600;
+  color: #FFFFFF; }
+
+/* label*/
+.login_screen .label_names {
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0px; }
+
+.login_screen .label_names:focus {
+  color: red; }
+
+/* forgot*/
+.login_screen .forgot {
+  text-align: right; }
+
+.login_screen .login_button {
+  width: 100%;
+  background-color: #EBBC4C;
+  border-color: #EBBC4C;
+  color: #000000;
+  border-radius: 0px;
+  font-weight: 700;
+  padding: 13px 10px; }
+
+.login_screen .login_button:hover {
+  width: 100%;
+  background-color: #EBBC4C;
+  border-color: #EBBC4C;
+  color: #000000;
+  border-radius: 0px;
+  font-weight: 700;
+  padding: 13px 10px; }
+
+.login_screen .section_button {
+  padding-top: 30px;
+  padding-bottom: 48px; }
+
+.login_screen .description {
+  text-align: center; }
+
+/* footer section start*/
+.login_screen .app_version {
+  color: #ffffff69;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: right;
+  padding-top: 112px; }
+
+.login_screen .footer_row {
+  	   /* position: absolute;
+      bottom: 0px;
+      width: 100%;*/
+  position: fixed;
+  bottom: 0px;
+  width: 100%; }
+
+.login_screen .number_footer {
+  font-weight: 700;
+  color: #ffffff69;
+  font-size: 0.7rem;
+  text-align: right;
+  padding-top: 16px;
+  margin-bottom: 0px;
+  margin-right: 100px; }
+
+.login_screen .number_footer_1 {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  text-align: right;
+  padding-top: 11px; }
+
+.login_screen .image_section_footer {
+  width: 130px; }
+
+/* input group*/
+.login_screen .user_group_text, .login_screen .first_names_display {
+  background: #000000;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 3.5rem;
+  outline: none !important;
+  box-shadow: none; }
+
+.first_names_display:focus {
+  outline: none;
+  background-color: none; }
+
+.login_screen .first_names_display {
+  text-align: right;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.8rem; }
+
+.input-group:focus {
+  border-color: #ff80ff; }
+
+/* eroor meassge disply*/
+.login_screen .errormeassages {
+  position: absolute;
+  top: 20px;
+  color: #ffffff69;
+  right: -166px;
+  white-space: nowrap;
+  display: none;
+  font-size: 0.7rem; }
+
+.login_screen .errormeassages_password {
+  position: absolute;
+  top: 20px;
+  color: #ffffff69;
+  font-size: 0.7rem;
+  right: -264px;
+  white-space: nowrap; }
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none; }
+
+/* OTP Verification code start*/
+.login_screen .login-text-OTP {
+  color: #ffffff69;
+  font-size: 0.7rem;
+  font-weight: 600; }
+
+.login_screen .forgot_OTP {
+  text-align: left; }
+
+/* disable button*/
+.login_screen .logindisable {
+  width: 100%;
+  background-color: #c1c5c8f0;
+  border-color: #c1c5c8f0;
+  color: #000000;
+  border-radius: 0px;
+  font-weight: 700;
+  padding: 13px 10px; }
+
+.depozito {
+  float: left;
+  width: 200px;
+  height: 40px;
+  background-color: red;
+  margin-top: 20px;
+  margin-right: 20px; }
+
+.d_ {
+  text-indent: 10px;
+  width: 200px;
+  height: 40px;
+  output: none;
+  border: 1px solid #d8dbdf;
+  font-size: 13px;
+  font-weight: bold; }
+
+.aa {
+  color: red;
+  display: block; }
+
+.bb {
+  display: none;
+  color: blue; }
+
+.enableOnInput {
+  width: 200px;
+  height: 25px;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  color: white;
+  font: bold 10px/25px "Lucida Grande";
+  border: 1px solid #0099e0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  background-color: #EBBC4C;
+  border-color: #EBBC4C; }
+
+.red {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  color: white;
+  font: bold 10px/25px "Lucida Grande";
+  border: 1px solid #0099e0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  background-image: #424242;
+  background-image: -moz-linear-gradient(top, #ff0000 0%, #c20202 100%);
+  background-image: -o-linear-gradient(top, #ff0000 0%, #c20202 100%);
+  background-image: -ms-linear-gradient(top, #ff0000 0%, #c20202 100%);
+  background-image: linear-gradient(top, #ff0000 0%, #c20202 100%);
+  background-color: #6c757d !important;
+  border-color: #6c757d;
+  color: #000000;
+  border-radius: 0px;
+  font-weight: 700;
+  padding: 13px 10px; }
+
+.red {
+  background-color: red; }
+
+/*# sourceMappingURL=loginpages.css.map */

@@ -1,0 +1,1352 @@
+/*font family*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet');
+/* theme background color*/
+/* light themes color*/
+/* disable buuton*/
+/* backgroung in full color*/
+/* tb color*/
+/* tab text color*/
+/* button color*/
+/* button garident color*/
+/* login diable buttn color*/
+/*  fontsize*/
+/* text align*/
+/* font weight*/
+/* fontfamily*/
+/* direction text*/
+/* text and label color*/
+/* table */
+/* postion*/
+/*media queries*/
+/* regression screen scss*/
+/* active button color*/
+/* inactive button*/
+/* inactive tab*/
+/****************** report in load more button color******************/
+/* body section start*/
+body {
+  background-color: #000000;
+  font-family: Arial; }
+
+.dashbaord .full_logo_sreen_dashboard {
+  min-height: 100%; }
+
+.dashbaord .ATM_withdrawal_switch_button {
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #F0F0F0;
+  /*opacity:0.4;*/
+  padding-left: 0px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.dashbaord .footer_logout_dashboard:hover {
+  color: #EBBC4C; }
+
+.dashbaord .number_footer_1:hover {
+  color: #EBBC4C; }
+
+.dashbaord .number_footer_logout:hover {
+  color: #EBBC4C; }
+
+.dashbaord .tranfer_button {
+  margin: 20px 0px; }
+
+.dashbaord .arrow_icon_tranfer {
+  max-width: 100%;
+  float: right; }
+
+.dashbaord .arrow_image_payout {
+  position: absolute;
+  right: 35px; }
+
+/*account section*/
+.dashbaord .accounts {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 31px;
+  padding-bottom: 27px; }
+
+.fullscreen {
+  height: 100%;
+  position: absolute;
+  width: 100%; }
+
+.dashbaord .logo-section {
+  padding-top: 41px;
+  padding-bottom: 27px;
+  position: sticky;
+  top: 10px; }
+
+.dashbaord .company_logo_text {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2rem; }
+
+/* text box section*/
+.dashbaord .user_group_text, .dashbaord .first_names_display {
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 0px;
+  height: 0.5rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #808080;
+  padding-left: 0px;
+  font-size: 0.7rem; }
+
+.dashbaord .first_names_display {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #ffffff52; }
+
+.dashbaord .user_group_text_username {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2.5rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  padding-left: 0px;
+  font-size: 0.8rem;
+  font-weight: bold; }
+
+.dashbaord .useremane_dashboard {
+  margin-bottom: 9px !important; }
+
+.dashbaord .account_numberes {
+  float: right;
+  color: #808080;
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin-bottom: 25px; }
+
+.dashbaord .user_group_text_active {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #EBBC4C;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding-left: 0px; }
+
+.dashbaord .user_group_text_active_my_account {
+  width: 100%;
+  background: none;
+  border: none;
+  /* border-bottom: 1px solid $bgcolorlight4;*/
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #EBBC4C;
+  font-weight: bold;
+  font-size: 0.81rem;
+  padding-left: 0px;
+  text-decoration: none; }
+
+.anchor_dashboard_screen:hover {
+  cursor: pointer; }
+
+.dashbaord .myaccount_dashboard {
+  margin-bottom: 13px !important; }
+
+.dashbaord .user_group_text_deactive {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding-left: 0px; }
+
+.dashbaord .user_group_text_deactive_error {
+  width: 100%;
+  background: none;
+  border: none;
+  /* border-bottom: 1px solid $bgcolorlight4;*/
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 0.81rem;
+  padding-left: 0px;
+  text-decoration: none; }
+
+.dashbaord .user_group_text_deactive_username {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 0.81rem;
+  padding-left: 0px; }
+
+.read_madels_accountes {
+  cursor: pointer; }
+
+.dashbaord .myprofile_dashboard {
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #FFFFFF;
+  height: 2rem;
+  width: 100%; }
+
+.dashbaord .myprofile_dashboard-active {
+  margin-bottom: 26px;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #EBBC4C; }
+
+/* button*/
+.dashbaord .login_button {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(235, 189, 76, 0.4) 0%, rgba(252, 206, 94, 0.4) 100%), #EBBC4C;
+  border: none;
+  color: #181818;
+  border-radius: 0px;
+  font-weight: bold;
+  padding: 15px 15px;
+  box-shadow: none;
+  outline: none;
+  font-size: 1.25rem; }
+
+dashbaord .tranfer_button {
+  padding-top: 13px;
+  padding-bottom: 16px; }
+
+.dashbaord .login_button_tranfer {
+  width: 100%;
+  background-color: #000000;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 0px;
+  font-weight: bold;
+  padding: 15px 15px;
+  box-shadow: none;
+  outline: 0;
+  font-size: 1.25rem; }
+
+button:focus {
+  box-shadow: none;
+  outline: 0; }
+
+/* paragraph*/
+.dashbaord .conformation-dashboard {
+  color: #808080;
+  font-weight: bold;
+  font-size: 0.81rem;
+  margin-bottom: 0px; }
+
+.dashbaord .conformation-dashboard_bysms {
+  color: #808080;
+  font-weight: 600;
+  font-size: 0.7rem; }
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
+/* footer section*/
+.dashbaord .image_section_footer {
+  width: 100%; }
+
+.dashbaord .number_footer_1 {
+  font-weight: 700;
+  color: #ffffff69;
+  font-size: 0.81rem;
+  text-align: right;
+  /*padding-top: 36px;*/
+  padding-right: 33px; }
+
+.dashbaord .footer_row {
+  position: absolute;
+  width: 100%;
+  bottom: 0px; }
+
+.dashbaord .input_group_section {
+  padding-top: calc(100% - 280px);
+  padding-bottom: 50px; }
+
+.dashbaord .fisrt_coulum_backcolor {
+  background: #101010;
+  padding-left: 33px;
+  padding-right: 33px; }
+
+.dashbaord .second_section {
+  background-color: #ffffffeb; }
+
+/* col-9*start*/
+/* tab section*/
+.dashbaord .tab_section {
+  padding-top: 40px;
+  padding-bottom: 48px; }
+
+.dashbaord .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #181818;
+  background: linear-gradient(180deg, rgba(235, 189, 76, 0.4) 0%, rgba(252, 206, 94, 0.4) 100%), #EBBC4C;
+  border-radius: 0px;
+  padding: 14px 24px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.dashbaord .nav-pills .nav-link {
+  color: #181818;
+  background-color: #dddddd;
+  border-radius: 0px;
+  padding: 14px 24px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.dashbaord .vault_sliver {
+  padding-left: 10px; }
+
+.dashbaord .persona_screen {
+  margin-bottom: 0px;
+  font-size: 0.81rem;
+  color: #181818;
+  opacity: 0.4;
+  font-weight: bold; }
+
+/* table section*/
+.dashbaord .table_section {
+  padding: 25px 0px 17px 0px;
+  white-space: nowrap; }
+
+.dashbaord .table_section_otp {
+  padding: 35px 0px 17px 0px;
+  white-space: nowrap; }
+
+.dashbaord .table_section_paddinges {
+  padding: 25px 0px;
+  white-space: nowrap; }
+
+.dashbaord .table {
+  margin-bottom: 0px !important; }
+
+.dashbaord .table td, .table th {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #181818;
+  vertical-align: middle;
+  padding: 15px 0px;
+  /* font-size:$fts32;*/
+  font-size: 0.9rem;
+  color: #181818; }
+
+.dashbaord .Resent_codes_otp {
+  padding-bottom: 30px; }
+
+.dashbaord .table tr {
+  font-size: 0.79rem;
+  font-weight: bolder; }
+
+.dashbaord .account_number_tables {
+  color: #9299a0 !important; }
+
+.dashbaord .h1, h1 {
+  font-size: 3rem; }
+
+.dashbaord .bar_icones {
+  color: #ffffffb0; }
+
+.dashbaord .data_toogle_button {
+  background: #000000;
+  padding: 10px 10px;
+  border-radius: 50%; }
+
+.dashbaord .button_toogle {
+  margin-top: -14px;
+  text-align: center; }
+
+.dashbaord .Toatl_Gold_in_vault {
+  font-size: 0.81rem;
+  color: #181818;
+  opacity: 0.4;
+  font-weight: bold;
+  margin-bottom: 19px; }
+
+.dashbaord .total_account {
+  font-size: 2rem;
+  font-weight: bolder; }
+
+/* footer*/
+.dashbaord .footer_in_accounts {
+  position: absolute;
+  bottom: 0px; }
+
+.dashbaord .number_footer_logout {
+  font-weight: bold;
+  color: #181818;
+  font-size: 0.81rem;
+  text-align: left; }
+
+/* card screen start*/
+.dashbaord .card_back-color {
+  background-color: #101010; }
+
+.dashbaord .ptagwithcard {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: bold; }
+
+.dashbaord .card_fist_block {
+  padding-bottom: 70px;
+  padding-top: 38px; }
+
+.dashbaord .input_group_section_card {
+  /*padding-top: 70px;
+  padding-bottom: 70px;*/
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.dashbaord .useremane_dashboard {
+  border-bottom: 1px solid #ffffff52; }
+
+.dashbaord .swithbutton_append {
+  position: absolute;
+  right: 0; }
+
+.dashbaord .ATM_withdrawal {
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #F0F0F0;
+  opacity: 0.4;
+  padding-left: 0px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+/* The switch - the box around the slider */
+.dashbaord .switch {
+  position: relative;
+  display: inline-block;
+  width: 63px;
+  height: 16px;
+  float: right; }
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none; }
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: -7px;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  width: 7px;
+  left: 8px;
+  bottom: 4px;
+  background-color: #181818;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 100%; }
+
+input.default:checked + .slider {
+  background-color: #EBBC4C; }
+
+input.primary:checked + .slider {
+  background-color: #2196F3; }
+
+input.success:checked + .slider {
+  background-color: #8bc34a; }
+
+input.info:checked + .slider {
+  background-color: #3de0f5; }
+
+input.warning:checked + .slider {
+  background-color: #FFC107; }
+
+input.danger:checked + .slider {
+  background-color: #f44336; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(52px);
+  -ms-transform: translateX(52px);
+  transform: translateX(52px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
+.list-group-item {
+  display: block;
+  padding: 0px;
+  background: none !important; }
+
+.dashbaord .ATM_withdrawal_1 {
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  margin-left: 175px;
+  color: #FFFFFF;
+  padding-left: 0px;
+  font-size: 0.7rem;
+  font-weight: bold; }
+
+.dashbaord .user_group_text_deactive_card {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-size: 1.7rem;
+  padding-left: 0px; }
+
+/* range slider*/
+.dashbaord .slider_1 {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  background: #EBBC4C;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s; }
+
+.dashbaord .slider_1::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #EBBC4C;
+  cursor: pointer; }
+
+.dashbaord .slider_1::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer; }
+
+.dashbaord .range_details {
+  margin-bottom: 0px;
+  text-align: right;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 0.81rem; }
+
+.dashbaord .daily_user_details {
+  color: #F0F0F0;
+  opacity: 0.4;
+  font-size: 0.81rem;
+  font-weight: bold;
+  float: left; }
+
+/* apple pay */
+.dashbaord .slidecontainer {
+  margin-bottom: 13px; }
+
+.dashbaord .apple_play_pay {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none; }
+
+.dashbaord .swithbutton_append_apple_pay {
+  position: absolute;
+  right: 0; }
+
+.dashbaord .reuires_confromation {
+  padding-top: 20px; }
+
+.sected_card_section {
+  background: #101010;
+  padding-left: 33px;
+  padding-right: 33px; }
+
+.dashbaord .login_button_send {
+  width: 100%;
+  background-color: #101010;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 0px;
+  font-weight: 600;
+  padding: 15px 15px;
+  font-size: 1.25rem;
+  font-weight: bold; }
+
+.dashbaord .login_button_send:focus {
+  box-shadow: none !important;
+  outline: 0 !important; }
+
+.dashbaord .seeting_rowes {
+  padding-top: 23px; }
+
+/* remove button*/
+.dashbaord .remove_icon_click {
+  position: absolute;
+  margin-top: 58px;
+  right: -103px;
+  background: #FFFFFF !important; }
+
+.dashbaord .remove__distep_icon {
+  color: #000000 !important; }
+
+/* tranfer screen start*/
+.dashbaord .debit_ammount {
+  padding-top: 55px;
+  padding-bottom: 55px; }
+
+.dashbaord .debit_account_paragraph {
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+  font-weight: bold; }
+
+/* input group*/
+.dashbaord .option_in_tarnfer {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #808080; }
+
+.dashbaord .option_in_tarnfer_debit {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #000000;
+  width: 423px; }
+
+h1 {
+  color: #181818; }
+
+.dashbaord .select_in_tranfer {
+  background-color: #ffffff0f !important;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  direction: rtl;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000000;
+  outline: 0;
+  height: 2.8rem;
+  box-shadow: none; }
+
+.dashbaord .select_in_tranfer_account_number {
+  background-color: #ffffff0f !important;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000000;
+  outline: 0;
+  height: 2.8rem;
+  box-shadow: none; }
+
+.dashbaord .accounts_tranferscreen_1 {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 31px;
+  padding-bottom: 27px; }
+
+.dashbaord .label_debit {
+  font-size: 0.81rem;
+  color: #181818;
+  font-weight: bold; }
+
+.label_account_number {
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #a0a6ac; }
+
+.row_border_confirm {
+  border-bottom: 1px solid #a0a6ac; }
+
+.dashbaord .slider_2 {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  background: #000000;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s; }
+
+.dashbaord .slider_2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #EBBC4C;
+  cursor: pointer; }
+
+.dashbaord .persona_screen_tranfer {
+  margin-bottom: 0px;
+  font-size: 0.78rem;
+  color: #000000;
+  font-weight: bold; }
+
+.dashbaord .slidecontainer_tranfer {
+  padding-top: 40px;
+  padding-bottom: 20px; }
+
+.dashbaord .total_account_tranfer {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 15px;
+  margin-bottom: 0px; }
+
+/* description*/
+.dashbaord .user_group_text_tranfer, .dashbaord .first_names_display_tranfer {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #000000;
+  padding-left: 0px;
+  font-size: 0.8rem;
+  font-weight: bold; }
+
+.dashbaord .user_group_text_tranfer_order_buy_coins {
+  color: #000000;
+  padding-left: 0px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 50%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  height: 2.8rem; }
+
+.dashbaord .first_names_display_tranfer {
+  text-align: right;
+  color: #000000;
+  font-weight: bold; }
+
+.dashbaord .contine_button {
+  padding-top: 30px;
+  /* padding-bottom: calc(100% - 963px);*/ }
+
+/* exchange screen start*/
+.dashbaord .selcet_account_number_exchange {
+  border: none;
+  box-shadow: none;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  background-color: #ffffff0f !important; }
+
+.dashbaord .gbr_payout_exchange {
+  width: 49%; }
+
+.dashbaord .accounts_exchanges {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 31px;
+  padding-bottom: 27px; }
+
+.dashbaord .button_toogle_tranfer_exchange {
+  /* margin-top: 120px;*/
+  text-align: center; }
+
+.form-control:focus {
+  box-shadow: none;
+  outline: none; }
+
+.dashbaord .debit_exchange {
+  padding: 15px 0px !Important; }
+
+.dashbaord .contine_button_exchange {
+  padding-top: 30px;
+  /*padding-bottom: calc(100% - 963px);*/ }
+
+.tranfer .table td, .table th {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #000000;
+  vertical-align: middle;
+  padding-left: 0px; }
+
+/* sell and payout screen start*/
+.dashbaord .debit_ammount_payout {
+  padding: 30px 0px 0px 0px; }
+
+.dashbaord .button_toogle_sell_payout {
+  margin-top: 80px;
+  text-align: center; }
+
+.sell_payout .market_palece_sell_payout {
+  border-bottom: 1px solid #dee2e6 !important;
+  vertical-align: middle; }
+
+.sell_payout .table td, .table th {
+  border-top: 1px solid #dee2e6;
+  /* border-bottom: 1px solid   $bgcolorlight9;*/
+  border-bottom: 1px solid #000000;
+  vertical-align: middle;
+  padding-left: 0px; }
+
+.dashbaord .currency_payout_sell_screen_in {
+  padding: 18px 0px; }
+
+.dashbaord .bar_icones:before {
+  font-size: 30px; }
+
+.dashbaord .accounts_sell_payout_screen {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 31px; }
+
+.dashbaord .footer_in_accounts_payout_screen {
+  position: absolute;
+  bottom: 0; }
+
+.dashbaord .claculate_payout_row {
+  padding-bottom: 100px; }
+
+/* avilable balance*/
+.dashbaord .debit_account_sell_payout {
+  margin-bottom: 0px;
+  font-size: 1.6rem;
+  font-weight: bold; }
+
+input[type="email"]::placeholder {
+  font-size: 0.79rem;
+  font-weight: bolder;
+  color: #000000; }
+
+.text_box_sell_payout:focus {
+  background: none; }
+
+.dashbaord .text_box_sell_payout {
+  background: none;
+  border: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-shadow: none;
+  font-size: 0.79rem;
+  font-weight: bolder;
+  color: #000000; }
+
+.dashbaord .ammount_dollar_payout {
+  padding: 0px 10px;
+  color: #a0a6ac; }
+
+.dashbaord .currency_sell_payout {
+  border-top: none !important; }
+
+.dashbaord .button_toogle_tranfer {
+  margin-top: 86px;
+  text-align: center; }
+
+.payot_transfer_section {
+  padding-top: 100px; }
+
+.currency_payrol_display {
+  font-size: 0.79rem;
+  font-weight: bolder;
+  border-bottom: 1px solid #dee2e6; }
+
+.dashbaord .persona_screen-payout {
+  margin-bottom: 0px;
+  font-size: 0.7rem;
+  color: #a0a6ac;
+  font-weight: 600; }
+
+.dashbaord .fisrt_section_payout_screen {
+  padding-bottom: 20px;
+  padding-top: 20px; }
+
+/* table width*/
+.dashbaord .gbr_payout {
+  width: 52%; }
+
+.dashbaord .ammount_dollar_payout_1 {
+  color: #a0a6ac; }
+
+.dashbaord .select_in_tranfer_payout {
+  background-color: #ffffff0f !important;
+  border: none;
+  direction: rtl;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000000;
+  outline: 0;
+  box-shadow: none; }
+
+li .active {
+  color: #000000; }
+
+.url_display {
+  padding: 0px 10px;
+  color: #a0a6ac; }
+
+.url_display:hover {
+  padding: 0px 10px;
+  color: #a0a6ac; }
+
+.dashbaord .option_in_tarnfer_payout {
+  background: none;
+  border: none;
+  border-radius: 0px;
+  font-size: 0.79rem;
+  font-weight: bold;
+  color: #808080; }
+
+.dashbaord .table_section_payout {
+  padding: 25px 0px 0px 0px;
+  white-space: nowrap; }
+
+.dashbaord .contine_button_payout {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+
+.dashbaord .input_group_section_payout {
+  padding-top: 121px;
+  padding-bottom: 551px; }
+
+/* prifile page start*/
+.dashbaord .select_in_tranfer_profile {
+  direction: ltr;
+  border: none;
+  background-color: #ffffff0f !important;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000000;
+  outline: 0;
+  box-shadow: none; }
+
+.dashbaord .contine_button_profile {
+  padding-bottom: 13px; }
+
+.dashbaord .pdf_button {
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 0px;
+  font-weight: 700;
+  padding: 15px 15px;
+  border: 2px solid #000000;
+  box-shadow: none;
+  outline: none;
+  font-size: 1.25rem; }
+
+.dashbaord .footer_in_accounts_profile {
+  position: absolute;
+  bottom: 0px; }
+
+.dashbaord .input_group_section_profile {
+  padding-top: 121px;
+  padding-bottom: 243px; }
+
+/*.dashbaord .general_profile_user
+{
+      padding-bottom: calc(100% - 993px);
+}
+*/
+.dashbaord .user_group_text_active_profile {
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 0px;
+  /*height: $fts4;*/
+  outline: none !important;
+  box-shadow: none;
+  color: #EBBC4C;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding-left: 0px; }
+
+.toogle_button_profile {
+  position: absolute;
+  top: 124px; }
+
+/* radio button*/
+.dashbaord .btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show > .btn-warning.dropdown-toggle {
+  color: #181818;
+  background: none;
+  border: none;
+  font-size: 0.81rem;
+  font-weight: bold;
+  cursor: pointer; }
+
+.dashbaord .btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show > .btn-warning.dropdown-toggle:focus {
+  background: none;
+  border: none;
+  outline: 0 !Important;
+  box-shadow: none !important; }
+
+.dashbaord .btn-warning {
+  background: none;
+  border: none;
+  color: #a0a6ac;
+  font-size: 0.81rem;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+/*confirm screen*/
+.dashbaord .img_edit_details_confirm {
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.9rem; }
+
+.dashbaord .img_edit_details_confirm:hover {
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none; }
+
+/* done page*/
+.dashbaord .invoice_done {
+  font-size: 2rem; }
+
+.dashbaord .page_content_done_page {
+  padding-top: 60px; }
+
+.dashbaord .account_done {
+  width: 30%; }
+
+.dashbaord .account_deatils_number_done {
+  color: #a0a6ac !important; }
+
+.dashbaord .btn_pdf_button {
+  width: 100%;
+  background: none;
+  color: #181818;
+  border-radius: 0px;
+  font-weight: 700;
+  padding: 15px 15px;
+  border: 1px solid #181818;
+  box-shadow: none;
+  outline: none;
+  font-size: 1.25rem; }
+
+.dashbaord .text_report {
+  font-size: 0.81rem;
+  color: #181818;
+  font-weight: bold; }
+
+.dashbaord .persona_screen {
+  margin-bottom: 0px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #181818;
+  opacity: 0.4; }
+
+/* 19/11/2019*/
+/* tab changing in exchang */
+.dashbaord .btn_report_new_design.active {
+  background: linear-gradient(180deg, rgba(235, 189, 76, 0.4) 0%, rgba(252, 206, 94, 0.4) 100%), #EBBC4C;
+  border-radius: 0px;
+  padding: 14px 24px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #181818;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  cursor: pointer; }
+
+.dashbaord .btn_report_new_design {
+  color: #181818;
+  background: #dddddd;
+  border-radius: 0px;
+  padding: 14px 24px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer; }
+
+.dashbaord .radio_button_group_exchange {
+  padding-top: 40px;
+  padding-bottom: 48px; }
+
+/* buy coins start*/
+.dashbaord .contine_button_buy_coins {
+  padding-bottom: 100px; }
+
+.dashbaord .active_buy_coins {
+  opacity: 0.4; }
+
+.dashbaord .report_button_click {
+  position: sticky;
+  top: 50%; }
+
+/* buy coins end*/
+/* loard card start*/
+.dashbaord .gold_loard_card {
+  border-top: 1px solid #dee2e6; }
+
+.dashbaord .gold_sliver_laodcrad_header {
+  padding: 14px 40px !important; }
+
+.dashbaord .slidecontainer_loard {
+  padding-top: 45px;
+  padding-bottom: 20px; }
+
+/* loard card end*/
+/* welcome page start*/
+.dashbaord .welcome_page_active {
+  font-size: 0.8rem;
+  font-weight: 700; }
+
+.dashbaord .ative_iones_welcones {
+  color: #EBBC4C; }
+
+.dashbaord .gold_loard_card_welcome {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+
+.dashbaord .ative_iones_welcones_sliver {
+  color: #dddddd; }
+
+.dashbaord .google_pie_chart_welcome {
+  width: 100%;
+  height: 380px;
+  position: absolute;
+  top: -157px; }
+
+.dashbaord .user_total_views {
+  color: #EBBC4C !important; }
+
+/* welcome page end*/
+/* media queries*/
+@media screen and (max-width: 736px) and (min-width: 300px) {
+  .dashbaord .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 14px; }
+
+  .dashbaord .nav-pills .nav-link {
+    padding: 14px 14px; }
+
+  .dashbaord .button_toogle {
+    top: 10px; }
+
+  .dashbaord .pdf_button {
+    margin: 20px 0px; }
+
+  .dashbaord .gbr_payout {
+    width: 0px; }
+
+  .dashbaord .swithbutton_append {
+    margin-left: 164px; } }
+@media screen and (max-width: 320px) and (min-width: 300px) {
+  .dashbaord .nav-pills .nav-link {
+    padding: 14px 7px; }
+
+  .dashbaord .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 9px; }
+
+  .dashbaord .button_toogle {
+    top: 0px; } }
+@media screen and (max-width: 823px) and (min-width: 800px) {
+  .dashbaord .company_logo_text {
+    font-size: 1rem; }
+
+  .dashbaord .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 20px; }
+
+  .dashbaord .nav-pills .nav-link {
+    padding: 14px 20px; }
+
+  .dashbaord .number_footer_1 {
+    padding-top: 10px; }
+
+  .dashbaord .input_group_section {
+    padding-bottom: 143px; }
+
+  .dashbaord .swithbutton_append_apple_pay {
+    margin-left: 12px; }
+
+  .dashbaord .swithbutton_append {
+    position: absolute;
+    left: 96px;
+    margin-left: 0px; }
+
+  .dashbaord .debit_ammount_payout {
+    padding: 30px 0px 55px 0px; }
+
+  .dashbaord .arrow_icon_tranfer {
+    max-width: 100%;
+    float: right; }
+
+  .dashbaord .fisrt_coulum_backcolor {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .dashbaord .general_profile_user {
+    padding-bottom: calc(100% - 435px); }
+
+  .dashbaord .input_group_section {
+    padding-top: calc(100% - 125px); } }
+@media screen and (max-width: 736px) and (min-width: 600px) {
+  .dashbaord .swithbutton_append {
+    margin-left: 322px; }
+
+  .dashbaord .swithbutton_append_apple_pay {
+    margin-left: 375px; }
+
+  .dashbaord .pdf_button {
+    margin: 20px 0px; } }
+@media screen and (max-width: 768px) and (min-width: 760px) {
+  .dashbaord .company_logo_text {
+    font-size: 1rem; }
+
+  .dashbaord .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 20px; }
+
+  .dashbaord .nav-pills .nav-link {
+    padding: 14px 20px; }
+
+  .dashbaord .number_footer_1 {
+    padding-top: 10px; }
+
+  .dashbaord .input_group_section {
+    padding-bottom: 143px; }
+
+  .dashbaord .swithbutton_append_apple_pay {
+    margin-left: 12px; }
+
+  .dashbaord .swithbutton_append {
+    position: absolute;
+    left: 96px;
+    margin-left: 0px; }
+
+  .dashbaord .footer_in_accounts_profile {
+    padding-top: 85px; }
+
+  .dashbaord .debit_ammount_payout {
+    padding: 30px 0px 55px 0px; }
+
+  .dashbaord .input_group_section_payout {
+    padding-top: 121px;
+    padding-bottom: 505px; }
+
+  .dashbaord .footer_row {
+    position: absolute;
+    width: 100%; } }
+@media screen and (max-width: 1024px) and (min-width: 1000px) {
+  .dashbaord .company_logo_text {
+    font-size: 1rem; }
+
+  .dashbaord .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 20px; }
+
+  .dashbaord .nav-pills .nav-link {
+    padding: 14px 20px; }
+
+  .dashbaord .number_footer_1 {
+    padding-top: 21px; }
+
+  .dashbaord .footer_in_accounts_profile {
+    padding-top: 55px; }
+
+  .dashbaord .input_group_section_payout {
+    padding-bottom: 565px; }
+
+  .dashbaord .input_group_section {
+    padding-bottom: 197px; }
+
+  .dashbaord .swithbutton_append {
+    position: absolute;
+    left: 142px;
+    margin-left: 0px; }
+
+  .dashbaord .contine_button {
+    padding-bottom: 176px; }
+
+  .dashbaord .footer_row {
+    position: absolute;
+    width: 100%; }
+
+  .dashbaord .claculate_payout_row {
+    padding-bottom: calc(100% - 567px); }
+
+  .dashbaord .general_profile_user {
+    padding-bottom: calc(100% - 629px); } }
+@media screen and (max-width: 1366px) and (min-width: 1360px) {
+  .dashbaord .swithbutton_append {
+    margin-left: 117px; }
+
+  .dashbaord .swithbutton_append_apple_pay {
+    margin-left: 180px; }
+
+  .dashbaord .fullscreen {
+    position: absolute;
+    top: 0;
+    bottom: 0; }
+
+  .dashbaord .claculate_payout_row {
+    padding-bottom: calc(100% - 849px); } }
+    /* @media screen and (max-width:$mediascreen16) and (min-width:$mediascreen10)
+     {
+     .dashbaord .arrow_image_payout {
+    position: absolute;
+   
+}
+     }
+*/
+
+/*# sourceMappingURL=dashboard.css.map */

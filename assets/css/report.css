@@ -1,0 +1,935 @@
+/*font family*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet');
+/* theme background color*/
+/* light themes color*/
+/* disable buuton*/
+/* backgroung in full color*/
+/* tb color*/
+/* tab text color*/
+/* button color*/
+/* button garident color*/
+/* login diable buttn color*/
+/*  fontsize*/
+/* text align*/
+/* font weight*/
+/* fontfamily*/
+/* direction text*/
+/* text and label color*/
+/* table */
+/* postion*/
+/*media queries*/
+/* regression screen scss*/
+/* active button color*/
+/* inactive button*/
+/* inactive tab*/
+/****************** report in load more button color******************/
+/* body section start*/
+body {
+  background-color: #000000;
+  font-family: Arial; }
+
+.Report .full_logo_sreen_dashboard {
+  min-height: 100%; }
+
+.Report .fullscreen {
+  height: 100%;
+  position: absolute;
+  width: 100%; }
+
+/*account section*/
+.Report .accounts {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 31px;
+  padding-bottom: 27px; }
+
+.Report .logo-section {
+  padding-top: 41px;
+  padding-bottom: 27px;
+  position: sticky;
+  top: 10px; }
+
+.Report .company_logo_text {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2rem; }
+
+.Report .user_group_text_deactive_username {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 0.81rem;
+  padding-left: 0px; }
+
+/* text box section*/
+.Report .user_group_text, .Report .first_names_display {
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 0px;
+  height: 0.5rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #808080;
+  padding-left: 0px;
+  font-size: 0.7rem; }
+
+.Report .arrow_icon_tranfer {
+  max-width: 100%;
+  float: right; }
+
+.Report .user_group_text_active {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #EBBC4C;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding-left: 0px;
+  cursor: pointer; }
+
+.Report .user_group_text_deactive_error {
+  width: 100%;
+  background: none;
+  border: none;
+  /* border-bottom: 1px solid $bgcolorlight4;*/
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding-left: 0px;
+  text-decoration: none; }
+
+.Report .user_group_text_deactive_error {
+  width: 100%;
+  background: none;
+  border: none;
+  /* border-bottom: 1px solid $bgcolorlight4;*/
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 0.81rem;
+  padding-left: 0px;
+  text-decoration: none; }
+
+.Report .user_group_text_active_my_account {
+  width: 100%;
+  background: none;
+  border: none;
+  /* border-bottom: 1px solid $bgcolorlight4;*/
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #EBBC4C;
+  font-weight: bold;
+  font-size: 0.81rem;
+  padding-left: 0px;
+  text-decoration: none; }
+
+.Report .first_names_display {
+  text-align: right;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.8rem; }
+
+.Report .useremane_dashboard {
+  margin-bottom: 9px !important; }
+
+.Report .account_numberes {
+  float: right;
+  color: #808080;
+  font-weight: 600;
+  font-size: 0.7rem; }
+
+.Report .account_numberes {
+  float: right;
+  color: #808080;
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin-bottom: 25px; }
+
+.das
+.Report .myaccount_dashboard {
+  margin-bottom: 13px !important; }
+
+.Report .myprofile_dashboard {
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #FFFFFF;
+  height: 2rem; }
+
+/* button*/
+.Report .login_button {
+  width: 100%;
+  background-color: #EBBC4C;
+  border-color: #EBBC4C;
+  color: #000000;
+  border-radius: 0px;
+  font-weight: 700;
+  padding: 15px 15px;
+  font-size: 1.25rem;
+  font-weight: bold; }
+
+.Report .login_button:focus {
+  box-shadow: none !Important;
+  outline: 0 !Important; }
+
+.Report .tranfer_button {
+  margin: 20px 0px; }
+
+.Report .login_button_tranfer {
+  width: 100%;
+  background-color: #000000;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 0px;
+  font-weight: 600;
+  padding: 15px 15px;
+  font-size: 1.25rem;
+  font-weight: bold; }
+
+/* paragraph*/
+.Report .conformation-dashboard {
+  color: #808080;
+  font-weight: bold;
+  font-size: 0.81rem;
+  margin-bottom: 0px; }
+
+.Report .conformation-dashboard_bysms {
+  color: #808080;
+  font-weight: 600;
+  font-size: 0.7rem; }
+
+.Report .footer_in_accounts {
+  position: absolute;
+  bottom: 0px; }
+
+/* footer section*/
+.Report .image_section_footer {
+  width: 100%; }
+
+.Report .number_footer_1 {
+  font-weight: 700;
+  color: #ffffff69;
+  font-size: 0.81rem;
+  text-align: right;
+  padding-top: 36px;
+  padding-right: 33px; }
+
+.Report .input_group_section {
+  padding-top: calc(100% - 280px); }
+
+.Report .fisrt_coulum_backcolor {
+  background: #101010;
+  padding-left: 33px;
+  padding-right: 33px; }
+
+.Report .second_section {
+  background-color: #ffffffeb; }
+
+.Report .footer_row {
+  position: absolute;
+  width: 100%;
+  bottom: 0px; }
+
+.Report .user_group_text_deactive {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding-left: 0px; }
+
+/* col-9*start*/
+/* tab section*/
+.Report .tab_section {
+  padding-top: 40px;
+  padding-bottom: 48px; }
+
+.Report .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #181818;
+  background: linear-gradient(180deg, rgba(235, 189, 76, 0.4) 0%, rgba(252, 206, 94, 0.4) 100%), #EBBC4C;
+  border-radius: 0px;
+  padding: 14px 35px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.Report .nav-pills .nav-link {
+  color: #181818;
+  background: #dddddd;
+  border-radius: 0px;
+  padding: 14px 35px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.Report .vault_sliver {
+  padding-left: 10px; }
+
+.Report .persona_screen {
+  margin-bottom: 0px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #181818;
+  opacity: 0.4; }
+
+/* table section*/
+.Report .table_section {
+  padding: 50px 0px 0px 0px;
+  white-space: nowrap; }
+
+.Report .table_section_paddinges {
+  padding: 25px 0px; }
+
+.Report .table {
+  margin-bottom: 0px !important; }
+
+.Report .table td, .table th {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #181818;
+  vertical-align: middle;
+  padding: 15px 0px;
+  font-size: 0.81rem;
+  color: #181818; }
+
+/*arrow icon in table*/
+.Report .arrow_icon_tranfer_table {
+  float: right;
+  max-width: 60px;
+  margin-right: 20px; }
+
+.Report .table tr {
+  font-size: 0.79rem;
+  font-weight: bolder; }
+
+.Report .account_number_tables {
+  color: #9299a0; }
+
+.Report .h1, h1 {
+  font-size: 3rem; }
+
+.Report .bar_icones {
+  color: #ffffffb0; }
+
+.Report .data_toogle_button {
+  background: #000000;
+  padding: 10px 10px;
+  border-radius: 50%; }
+
+.Report .bar_icones:before {
+  font-size: 30px; }
+
+.Report .button_toogle {
+  text-align: center; }
+
+.Report .report_button_click {
+  position: sticky;
+  top: 50%;
+  /*top: 61px;*/ }
+
+.Report .Toatl_Gold_in_vault {
+  font-size: 0.7rem;
+  color: #a0a6ac;
+  font-weight: 600;
+  margin-bottom: 19px; }
+
+.Report .total_account {
+  font-size: 2rem;
+  font-weight: bolder; }
+
+/* footer*/
+.Report .number_footer_logout {
+  font-weight: 700;
+  color: #000000;
+  font-size: 0.81rem;
+  text-align: left; }
+
+/* card screen start*/
+.Report .card_back-color {
+  background-color: #101010; }
+
+.Report .ptagwithcard {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: bold; }
+
+.Report .card_fist_block {
+  padding-bottom: 70px;
+  padding-top: 38px; }
+
+.Report .input_group_section_card {
+  /*padding-top: 70px;
+  padding-bottom: 70px;*/
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.Report .useremane_dashboard {
+  border-bottom: 1px solid #ffffff52; }
+
+.Report .swithbutton_append {
+  position: absolute;
+  right: 0; }
+
+.Report .ATM_withdrawal {
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #F0F0F0;
+  opacity: 0.4;
+  padding-left: 0px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.Report .ATM_withdrawal_switch_button {
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #F0F0F0;
+  /*opacity:0.4;*/
+  padding-left: 0px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 63px;
+  height: 16px;
+  float: right; }
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none; }
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: -7px;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  width: 7px;
+  left: 8px;
+  bottom: 4px;
+  background-color: #181818;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 100%; }
+
+input.default:checked + .slider {
+  background-color: #EBBC4C; }
+
+input.primary:checked + .slider {
+  background-color: #2196F3; }
+
+input.success:checked + .slider {
+  background-color: #8bc34a; }
+
+input.info:checked + .slider {
+  background-color: #3de0f5; }
+
+input.warning:checked + .slider {
+  background-color: #FFC107; }
+
+input.danger:checked + .slider {
+  background-color: #f44336; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(52px);
+  -ms-transform: translateX(52px);
+  transform: translateX(52px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
+.list-group-item {
+  display: block;
+  padding: 0px;
+  background: none !important; }
+
+.Report .ATM_withdrawal_1 {
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  margin-left: 175px;
+  color: #FFFFFF;
+  padding-left: 0px;
+  font-size: 0.7rem;
+  font-weight: bold; }
+
+.Report .user_group_text_deactive_card {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-size: 1.7rem;
+  padding-left: 0px; }
+
+/* range slider*/
+.Report .slider_1 {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background: #EBBC4C;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s; }
+
+.Report .slider_1::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #EBBC4C;
+  cursor: pointer; }
+
+.Report .slider_1::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer; }
+
+.Report .range_details {
+  margin-bottom: 0px;
+  text-align: right;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 0.81rem; }
+
+.Report .daily_user_details {
+  color: #F0F0F0;
+  opacity: 0.4;
+  font-size: 0.81rem;
+  font-weight: bold;
+  float: left; }
+
+/* apple pay */
+.Report .slidecontainer {
+  margin-bottom: 13px; }
+
+.Report .apple_play_pay {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none; }
+
+.Report .swithbutton_append_apple_pay {
+  position: absolute;
+  right: 0; }
+
+.Report .reuires_confromation {
+  padding-top: 20px; }
+
+.sected_card_section {
+  background: #101010;
+  padding-left: 33px;
+  padding-right: 33px; }
+
+.Report .login_button_send {
+  width: 100%;
+  background-color: #101010;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 0px;
+  font-weight: 600;
+  padding: 15px 15px;
+  font-size: 1.25rem;
+  font-weight: bold; }
+
+.Report .login_button_send:focus {
+  box-shadow: none !Important;
+  outline: 0 !Important; }
+
+.Report .seeting_rowes {
+  padding-top: 23px; }
+
+/* remove button*/
+.Report .remove_icon_click {
+  position: absolute;
+  margin-top: 58px;
+  right: -103px;
+  background: #FFFFFF !important; }
+
+.Report .remove__distep_icon {
+  color: #000000 !important; }
+
+/* tranfer screen start*/
+.Report .debit_ammount {
+  padding-top: 55px;
+  padding-bottom: 55px; }
+
+.debit_account_paragraph {
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+  font-weight: bold; }
+
+/* input group*/
+.Report .option_in_tarnfer {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #808080; }
+
+.Report .select_in_tranfer {
+  background-color: #ffffff0f;
+  border: none;
+  border-bottom: 1px solid #181818;
+  border-radius: 0px;
+  direction: rtl;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #181818;
+  outline: 0;
+  height: 2.8rem;
+  box-shadow: none; }
+
+.Report .slider_2 {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background: #808080;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s; }
+
+.Report .slider_2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #EBBC4C;
+  cursor: pointer; }
+
+.Report .persona_screen_tranfer {
+  margin-bottom: 0px;
+  font-size: 0.7rem;
+  color: #000000;
+  font-weight: bold; }
+
+.Report .slidecontainer_tranfer {
+  padding-top: 40px;
+  padding-bottom: 20px; }
+
+.Report .total_account_tranfer {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  color: #181818; }
+
+h1 {
+  color: #181818; }
+
+/* description*/
+.Report .user_group_text_tranfer, .Report .first_names_display_tranfer {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #181818;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #181818;
+  padding-left: 0px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.Report .first_names_display_tranfer {
+  text-align: right;
+  color: #000000; }
+
+.Report .contine_button {
+  padding: 20px 0px; }
+
+/* exchange screen start*/
+.selcet_account_number_exchange {
+  border: none;
+  box-shadow: none;
+  font-size: 0.8rem;
+  font-weight: bolder; }
+
+.form-control:focus {
+  box-shadow: none; }
+
+.debit_exchange {
+  padding: 5px !Important; }
+
+.Report .contine_button_exchange {
+  padding-top: 30px;
+  padding-bottom: 204px; }
+
+/* report screen start*/
+.Report .debit_ammount_report {
+  padding-top: 30px;
+  /*padding-bottom: calc(100% - 932px);*/ }
+
+.Report .reload_report {
+  text-decoration: underline;
+  color: #181818; }
+
+.Report .text_report {
+  font-size: 0.81rem;
+  color: #181818;
+  font-weight: bold; }
+
+.Report .reload_report:hover {
+  color: #a0a6ac;
+  text-decoration: none !important; }
+
+/* tables*/
+.table thead th {
+  border-top: none;
+  border-bottom: 1px solid #dddddd;
+  padding: 14px 0px;
+  color: #181818;
+  opacity: 0.4;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.footer_logout_dashboard:hover {
+  color: #EBBC4C; }
+
+.Report .number_footer_1:hover {
+  color: #EBBC4C; }
+
+.Report .number_footer_logout:hover {
+  color: #EBBC4C; }
+
+/* pdf button*/
+.Report .pdf_button {
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #181818;
+  border-radius: 0px;
+  font-weight: 700;
+  padding: 15px 15px;
+  border: 1px solid #181818;
+  box-shadow: none;
+  outline: none;
+  font-size: 1.25rem; }
+
+.Report .date_description_report {
+  width: 325px; }
+
+/* radio button*/
+.Report .btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show > .btn-warning.dropdown-toggle {
+  color: #181818;
+  background: none;
+  border: none;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.Report .btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show > .btn-warning.dropdown-toggle:focus {
+  background: none;
+  border: none;
+  outline: 0 !Important;
+  box-shadow: none !important; }
+
+.Report .btn-warning {
+  background: none;
+  border: none;
+  color: #a0a6ac;
+  font-size: 0.81rem;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.Report .all_time_report {
+  margin-left: 239px; }
+
+.border_style_in_bottom_report {
+  border-bottom: 1px solid #181818;
+  padding-top: 20px; }
+
+/* 19/11/2019*/
+/* tab changing*/
+.Report .btn_report_new_design.active {
+  background: linear-gradient(180deg, rgba(235, 189, 76, 0.4) 0%, rgba(252, 206, 94, 0.4) 100%), #EBBC4C;
+  border-radius: 0px;
+  padding: 14px 35px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #181818;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  cursor: pointer; }
+
+.Report .btn_report_new_design {
+  color: #181818;
+  background: #dddddd;
+  border-radius: 0px;
+  padding: 14px 35px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer; }
+
+.Report .report_trophy_iones {
+  font-size: 1rem; }
+
+.Report .show_more_button {
+  padding: 18px 12px;
+  background: #80808026;
+  border: none;
+  width: 100%;
+  font-weight: 700;
+  box-shadow: none; }
+
+/* media queries*/
+@media screen and (max-width: 736px) and (min-width: 300px) {
+  .Report .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 24px; }
+
+  .Report .nav-pills .nav-link {
+    padding: 14px 24px; }
+
+  .Report .button_toogle {
+    top: 10px; } }
+@media screen and (max-width: 823px) and (min-width: 800px) {
+  .Report .company_logo_text {
+    font-size: 1rem; }
+
+  .Report .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 20px; }
+
+  .Report .nav-pills .nav-link {
+    padding: 14px 20px; }
+
+  .Report .number_footer_1 {
+    padding-top: 10px; }
+
+  .Report .input_group_section {
+    padding-bottom: 143px; }
+
+  .Report .swithbutton_append_apple_pay {
+    margin-left: 12px; }
+
+  .Report .swithbutton_append {
+    position: absolute;
+    left: 96px;
+    margin-left: 0px; } }
+@media screen and (max-width: 736px) and (min-width: 600px) {
+  .Report .swithbutton_append {
+    margin-left: 322px; }
+
+  .Report .swithbutton_append_apple_pay {
+    margin-left: 375px; } }
+@media screen and (max-width: 768px) and (min-width: 760px) {
+  .Report .company_logo_text {
+    font-size: 1rem; }
+
+  .Report .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 20px; }
+
+  .Report .nav-pills .nav-link {
+    padding: 14px 20px; }
+
+  .Report .number_footer_1 {
+    padding-top: 10px; }
+
+  .Report .input_group_section {
+    padding-bottom: 143px; }
+
+  .Report .swithbutton_append_apple_pay {
+    margin-left: 12px; }
+
+  .Report .swithbutton_append {
+    position: absolute;
+    left: 96px;
+    margin-left: 0px; } }
+@media screen and (max-width: 1024px) and (min-width: 1000px) {
+  .Report .company_logo_text {
+    font-size: 1rem; }
+
+  .Report .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 20px; }
+
+  .Report .nav-pills .nav-link {
+    padding: 14px 20px; }
+
+  .Report .number_footer_1 {
+    padding-top: 10px; }
+
+  .Report .input_group_section {
+    padding-bottom: 143px; }
+
+  .Report .swithbutton_append_apple_pay {
+    margin-left: 80px; }
+
+  .Report .swithbutton_append {
+    position: absolute;
+    left: 142px;
+    margin-left: 0px; } }
+
+/*# sourceMappingURL=report.css.map */

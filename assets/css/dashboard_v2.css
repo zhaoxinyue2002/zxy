@@ -1,0 +1,1467 @@
+/*font family*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet');
+/* theme background color*/
+/* light themes color*/
+/* disable buuton*/
+/* backgroung in full color*/
+/* tb color*/
+/* tab text color*/
+/* button color*/
+/* button garident color*/
+/* login diable buttn color*/
+/*  fontsize*/
+/* text align*/
+/* font weight*/
+/* fontfamily*/
+/* direction text*/
+/* text and label color*/
+/* table */
+/* postion*/
+/*media queries*/
+/* regression screen scss*/
+/* active button color*/
+/* inactive button*/
+/* inactive tab*/
+/*Custom Text Color*/
+/****************** report in load more button color******************/
+/* Resend OTP - Text Color */
+#resend_otp {
+  color: #181818 !important; }
+
+/* body section start*/
+body {
+  background-color: #000000;
+  font-family: Arial; }
+
+.sellandpayout_v2 .full_logo_sreen_dashboard {
+  min-height: 100%; }
+
+.sellandpayout_v2 .ATM_withdrawal_switch_button {
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #F0F0F0;
+  /*opacity:0.4;*/
+  padding-left: 0px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.sellandpayout_v2 .footer_logout_dashboard:hover {
+  color: #EBBC4C; }
+
+.sellandpayout_v2 .number_footer_1:hover {
+  color: #EBBC4C; }
+
+.sellandpayout_v2 .number_footer_logout:hover {
+  color: #EBBC4C; }
+
+.sellandpayout_v2 .tranfer_button {
+  margin: 20px 0px; }
+
+.sellandpayout_v2 .arrow_icon_tranfer {
+  max-width: 100%;
+  float: right; }
+
+.sellandpayout_v2 .arrow_image_payout {
+  position: absolute;
+  right: 35px; }
+
+/*account section*/
+.sellandpayout_v2 .accounts {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 3rem;
+  /*Changed on 02-07-2020 from 31px*/
+  padding-bottom: 27px; }
+
+.fullscreen {
+  height: 100%;
+  position: absolute;
+  width: 100%; }
+
+.sellandpayout_v2 .logo-section {
+  padding-top: 41px;
+  padding-bottom: 27px;
+  position: sticky;
+  top: 10px; }
+
+.sellandpayout_v2 .company_logo_text {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2rem; }
+
+/* text box section*/
+.sellandpayout_v2 .user_group_text, .sellandpayout_v2 .first_names_display {
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 0px;
+  height: 0.5rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #808080;
+  padding-left: 0px;
+  font-size: 0.7rem; }
+
+.sellandpayout_v2 .first_names_display {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #ffffff52; }
+
+.sellandpayout_v2 .user_group_text_username {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2.5rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  padding-left: 0px;
+  font-size: 0.8rem;
+  font-weight: bold; }
+
+.sellandpayout_v2 .useremane_dashboard {
+  margin-bottom: 9px !important; }
+
+.sellandpayout_v2 .account_numberes {
+  float: right;
+  color: #808080;
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin-bottom: 25px; }
+
+.sellandpayout_v2 .user_group_text_active {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #EBBC4C;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding-left: 0px; }
+
+.sellandpayout_v2 .user_group_text_active_my_account {
+  width: 100%;
+  background: none;
+  border: none;
+  /* border-bottom: 1px solid $bgcolorlight4;*/
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #EBBC4C;
+  font-weight: bold;
+  font-size: 0.81rem;
+  padding-left: 0px;
+  text-decoration: none; }
+
+.anchor_dashboard_screen:hover {
+  cursor: pointer; }
+
+.sellandpayout_v2 .myaccount_dashboard {
+  margin-bottom: 13px !important; }
+
+.sellandpayout_v2 .user_group_text_deactive {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding-left: 0px; }
+
+.sellandpayout_v2 .user_group_text_deactive_error {
+  width: 100%;
+  background: none;
+  border: none;
+  /* border-bottom: 1px solid $bgcolorlight4;*/
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 0.81rem;
+  padding-left: 0px;
+  text-decoration: none; }
+
+.sellandpayout_v2 .user_group_text_deactive_username {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 0.81rem;
+  padding-left: 0px; }
+
+.read_madels_accountes {
+  cursor: pointer; }
+
+.sellandpayout_v2 .myprofile_dashboard {
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #FFFFFF;
+  height: 2rem;
+  width: 100%; }
+
+.sellandpayout_v2 .myprofile_dashboard-active {
+  margin-bottom: 26px;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #EBBC4C; }
+
+/* button*/
+.sellandpayout_v2 .login_button {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(235, 189, 76, 0.4) 0%, rgba(252, 206, 94, 0.4) 100%), #EBBC4C;
+  border: none;
+  color: #181818;
+  border-radius: 0px;
+  font-weight: bold;
+  padding: 12px  15px;
+  box-shadow: none;
+  outline: none;
+  font-size: 1.08rem; }
+
+dashbaord .tranfer_button {
+  padding-top: 13px;
+  padding-bottom: 16px; }
+
+.sellandpayout_v2 .login_button_tranfer {
+  width: 100%;
+  background-color: #000000;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 0px;
+  font-weight: bold;
+  padding: 12px 15px;
+  box-shadow: none;
+  outline: 0;
+  font-size: 1.08rem; }
+
+button:focus {
+  box-shadow: none;
+  outline: 0; }
+
+/* paragraph*/
+.sellandpayout_v2 .conformation-dashboard {
+  color: #808080;
+  font-weight: bold;
+  font-size: 0.81rem;
+  margin-bottom: 0px; }
+
+.sellandpayout_v2 .conformation-dashboard_bysms {
+  color: #808080;
+  font-weight: 600;
+  font-size: 0.7rem; }
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
+/* footer section*/
+.sellandpayout_v2 .image_section_footer {
+  width: 100%; }
+
+.sellandpayout_v2 .number_footer_1 {
+  font-weight: 700;
+  color: #ffffff69;
+  font-size: 0.81rem;
+  text-align: right;
+  /*padding-top: 36px;*/
+  /* padding-right: 33px;*/ }
+
+/*  .sellandpayout_v2     .footer_row
+{
+  position: absolute;
+    width: 100%;
+    bottom: 0px
+}*/
+/*.sellandpayout_v2    .input_group_section
+{
+	padding-top: calc(100% - 280px);
+  padding-bottom:50px;
+
+
+}*/
+.sellandpayout_v2 .fisrt_coulum_backcolor {
+  background: #101010;
+  padding-left: 33px;
+  padding-right: 33px; }
+
+.sellandpayout_v2 .second_section {
+  background-color: #ffffffeb; }
+
+/* col-9*start*/
+/* tab section*/
+.sellandpayout_v2 .tab_section {
+  padding-top: 40px;
+  padding-bottom: 48px; }
+
+.sellandpayout_v2 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #181818;
+  background: linear-gradient(180deg, rgba(235, 189, 76, 0.4) 0%, rgba(252, 206, 94, 0.4) 100%), #EBBC4C;
+  border-radius: 0px;
+  padding: 14px 24px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.sellandpayout_v2 .nav-pills .nav-link {
+  color: #181818;
+  background-color: #dddddd;
+  border-radius: 0px;
+  padding: 14px 24px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.sellandpayout_v2 .vault_sliver {
+  padding-left: 10px; }
+
+.sellandpayout_v2 .persona_screen {
+  margin-bottom: 0px;
+  font-size: 0.81rem;
+  color: #181818;
+  opacity: 0.4;
+  font-weight: bold; }
+
+/* table section*/
+.sellandpayout_v2 .table_section {
+  padding: 25px 0px 17px 0px;
+  white-space: nowrap; }
+
+.sellandpayout_v2 .table_section_otp {
+  padding: 35px 0px 17px 0px;
+  white-space: nowrap; }
+
+.sellandpayout_v2 .table_section_paddinges {
+  padding: 25px 0px;
+  white-space: nowrap; }
+
+.sellandpayout_v2 .table {
+  margin-bottom: 0px !important; }
+
+.sellandpayout_v2 .table td, .table th {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #181818;
+  vertical-align: middle;
+  padding: 15px 0px;
+  /* font-size:$fts32;*/
+  font-size: 0.9rem;
+  color: #181818; }
+
+.sellandpayout_v2 .Resent_codes_otp {
+  padding-bottom: 30px; }
+
+.sellandpayout_v2 .table tr {
+  font-size: 0.79rem;
+  font-weight: bolder; }
+
+.sellandpayout_v2 .account_number_tables {
+  color: #9299a0 !important; }
+
+.sellandpayout_v2 .h1, h1 {
+  font-size: 3rem; }
+
+.sellandpayout_v2 .bar_icones {
+  color: #ffffffb0; }
+
+.sellandpayout_v2 .data_toogle_button {
+  background: #000000;
+  padding: 10px 10px;
+  border-radius: 50%; }
+
+.sellandpayout_v2 .button_toogle {
+  margin-top: -14px;
+  text-align: center; }
+
+.sellandpayout_v2 .Toatl_Gold_in_vault {
+  font-size: 0.81rem;
+  color: #181818;
+  opacity: 0.4;
+  font-weight: bold;
+  margin-bottom: 19px; }
+
+.sellandpayout_v2 .total_account {
+  font-size: 2rem;
+  font-weight: bolder; }
+
+/* footer*/
+.sellandpayout_v2 .footer_in_accounts {
+  position: absolute;
+  bottom: 0px; }
+
+.sellandpayout_v2 .number_footer_logout {
+  font-weight: bold;
+  color: #181818;
+  font-size: 0.81rem;
+  text-align: left; }
+
+/* card screen start*/
+.sellandpayout_v2 .card_back-color {
+  background-color: #101010; }
+
+.sellandpayout_v2 .ptagwithcard {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: bold; }
+
+.sellandpayout_v2 .card_fist_block {
+  padding-bottom: 70px;
+  padding-top: 38px; }
+
+.sellandpayout_v2 .input_group_section_card {
+  /*padding-top: 70px;
+  padding-bottom: 70px;*/
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.sellandpayout_v2 .useremane_dashboard {
+  border-bottom: 1px solid #ffffff52; }
+
+.sellandpayout_v2 .swithbutton_append {
+  position: absolute;
+  right: 0; }
+
+/*Side Menu - Select Dropdown*/
+.sellandpayout_v2 .swithbutton_append select#currencyselection {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #f0f0f0; }
+
+.sellandpayout_v2 .swithbutton_append select#currencyselection option {
+  background: #101010;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #f0f0f0; }
+
+.sellandpayout_v2 .swithbutton_append select#currencyselection option:hover {
+  background: #101010;
+  color: #f0f0f0; }
+
+.sellandpayout_v2 .ATM_withdrawal {
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #F0F0F0;
+  opacity: 0.4;
+  padding-left: 0px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+/* The switch - the box around the slider */
+.sellandpayout_v2 .switch {
+  position: relative;
+  display: inline-block;
+  width: 63px;
+  height: 16px;
+  float: right; }
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none; }
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: -7px;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  width: 7px;
+  left: 8px;
+  bottom: 4px;
+  background-color: #181818;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 100%; }
+
+input.default:checked + .slider {
+  background-color: #EBBC4C; }
+
+input.primary:checked + .slider {
+  background-color: #2196F3; }
+
+input.success:checked + .slider {
+  background-color: #8bc34a; }
+
+input.info:checked + .slider {
+  background-color: #3de0f5; }
+
+input.warning:checked + .slider {
+  background-color: #FFC107; }
+
+input.danger:checked + .slider {
+  background-color: #f44336; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(52px);
+  -ms-transform: translateX(52px);
+  transform: translateX(52px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
+.list-group-item {
+  display: block;
+  padding: 0px;
+  background: none !important; }
+
+.sellandpayout_v2 .ATM_withdrawal_1 {
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  margin-left: 175px;
+  color: #FFFFFF;
+  padding-left: 0px;
+  font-size: 0.7rem;
+  font-weight: bold; }
+
+.sellandpayout_v2 .user_group_text_deactive_card {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff52;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #FFFFFF;
+  font-size: 1.7rem;
+  padding-left: 0px; }
+
+/* range slider*/
+.sellandpayout_v2 .slider_1 {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  background: #EBBC4C;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s; }
+
+.sellandpayout_v2 .slider_1::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #EBBC4C;
+  cursor: pointer; }
+
+.sellandpayout_v2 .slider_1::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer; }
+
+.sellandpayout_v2 .range_details {
+  margin-bottom: 0px;
+  text-align: right;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 0.81rem; }
+
+.sellandpayout_v2 .daily_user_details {
+  color: #F0F0F0;
+  opacity: 0.4;
+  font-size: 0.81rem;
+  font-weight: bold;
+  float: left; }
+
+/* apple pay */
+.sellandpayout_v2 .slidecontainer {
+  margin-bottom: 13px; }
+
+.sellandpayout_v2 .apple_play_pay {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none; }
+
+.sellandpayout_v2 .swithbutton_append_apple_pay {
+  position: absolute;
+  right: 0; }
+
+.sellandpayout_v2 .reuires_confromation {
+  padding-top: 20px; }
+
+.sected_card_section {
+  background: #101010;
+  padding-left: 33px;
+  padding-right: 33px; }
+
+.sellandpayout_v2 .login_button_send {
+  width: 100%;
+  background-color: #101010;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 0px;
+  font-weight: 600;
+  padding: 15px 15px;
+  font-size: 1.25rem;
+  font-weight: bold; }
+
+.sellandpayout_v2 .login_button_send:focus {
+  box-shadow: none !important;
+  outline: 0 !important; }
+
+.sellandpayout_v2 .seeting_rowes {
+  padding-top: 23px; }
+
+/* remove button*/
+.sellandpayout_v2 .remove_icon_click {
+  position: absolute;
+  margin-top: 58px;
+  right: -103px;
+  background: #FFFFFF !important; }
+
+/* tranfer screen start*/
+.sellandpayout_v2 .debit_ammount {
+  padding-top: 55px;
+  padding-bottom: 55px; }
+
+.sellandpayout_v2 .debit_account_paragraph {
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+  font-weight: bold; }
+
+/* input group*/
+.sellandpayout_v2 .option_in_tarnfer {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #808080; }
+
+.sellandpayout_v2 .option_in_tarnfer_debit {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #000000;
+  width: 423px; }
+
+h1 {
+  color: #181818; }
+
+.sellandpayout_v2 .select_in_tranfer {
+  background-color: #ffffff0f !important;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  /* direction:$textdr; changed on 02-07-2020*/
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000000;
+  outline: 0;
+  height: 2.8rem;
+  box-shadow: none; }
+
+.sellandpayout_v2 .select_in_tranfer_account_number {
+  background-color: #ffffff0f !important;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000000;
+  outline: 0;
+  height: 2.8rem;
+  box-shadow: none; }
+
+.sellandpayout_v2 .accounts_tranferscreen_1 {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 31px;
+  padding-bottom: 27px; }
+
+.sellandpayout_v2 .label_debit {
+  font-size: 0.81rem;
+  color: #181818;
+  font-weight: bold; }
+
+.label_account_number {
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #a0a6ac; }
+
+.row_border_confirm {
+  border-bottom: 1px solid #a0a6ac; }
+
+.sellandpayout_v2 .slider_2 {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  background: #000000;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s; }
+
+.sellandpayout_v2 .slider_2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #EBBC4C;
+  cursor: pointer; }
+
+.sellandpayout_v2 .persona_screen_tranfer {
+  margin-bottom: 0px;
+  font-size: 0.78rem;
+  color: #000000;
+  font-weight: bold; }
+
+.sellandpayout_v2 .slidecontainer_tranfer {
+  padding-top: 40px;
+  padding-bottom: 20px; }
+
+.sellandpayout_v2 .total_account_tranfer {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 15px;
+  margin-bottom: 0px; }
+
+/* description*/
+.sellandpayout_v2 .user_group_text_tranfer, .sellandpayout_v2 .first_names_display_tranfer {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #000000;
+  padding-left: 0px;
+  font-size: 0.8rem;
+  font-weight: bold; }
+
+.sellandpayout_v2 .user_group_text_tranfer_order_buy_coins {
+  color: #000000;
+  padding-left: 0px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 50%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0px;
+  height: 2.8rem; }
+
+.sellandpayout_v2 .first_names_display_tranfer {
+  text-align: right;
+  color: #000000;
+  font-weight: bold; }
+
+.sellandpayout_v2 .contine_button {
+  padding-top: 30px;
+  /* padding-bottom: calc(100% - 963px);*/ }
+
+/* exchange screen start*/
+.sellandpayout_v2 .selcet_account_number_exchange {
+  border: none;
+  box-shadow: none;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  background-color: #ffffff0f !important; }
+
+.sellandpayout_v2 .gbr_payout_exchange {
+  width: 49%; }
+
+.sellandpayout_v2 .accounts_exchanges {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 3rem;
+  /*Changed on 02-07-2020 from 31px*/
+  padding-bottom: 27px; }
+
+.sellandpayout_v2 .button_toogle_tranfer_exchange {
+  /* margin-top: 120px;*/
+  text-align: center; }
+
+.form-control:focus {
+  box-shadow: none;
+  outline: none; }
+
+.sellandpayout_v2 .debit_exchange {
+  padding: 15px 0px !Important; }
+
+.sellandpayout_v2 .contine_button_exchange {
+  padding-top: 30px;
+  /*padding-bottom: calc(100% - 963px);*/ }
+
+.tranfer .table td, .table th {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #000000;
+  vertical-align: middle;
+  padding-left: 0px; }
+
+/* sell and payout screen start*/
+.sellandpayout_v2 .debit_ammount_payout {
+  padding: 30px 0px 0px 0px; }
+
+.sellandpayout_v2 .button_toogle_sell_payout {
+  margin-top: 80px;
+  text-align: center; }
+
+.sell_payout .market_palece_sell_payout {
+  border-bottom: 1px solid #dee2e6 !important;
+  vertical-align: middle; }
+
+.sell_payout .table td, .table th {
+  border-top: 1px solid #dee2e6;
+  /* border-bottom: 1px solid   $bgcolorlight9;*/
+  border-bottom: 1px solid #000000;
+  vertical-align: middle;
+  padding-left: 0px; }
+
+.sellandpayout_v2 .currency_payout_sell_screen_in {
+  padding: 18px 0px; }
+
+.sellandpayout_v2 .bar_icones {
+  font-size: 30px; }
+
+.sellandpayout_v2 .accounts_sell_payout_screen {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 3rem;
+  /*Changed on 02-07-2020 from 31px*/ }
+
+.sellandpayout_v2 .footer_in_accounts_payout_screen {
+  position: absolute;
+  bottom: 0; }
+
+.sellandpayout_v2 .claculate_payout_row {
+  padding-bottom: 100px; }
+
+/* avilable balance*/
+.sellandpayout_v2 .debit_account_sell_payout {
+  margin-bottom: 0px;
+  font-size: 1.6rem;
+  font-weight: bold; }
+
+input[type="email"]::placeholder {
+  font-size: 0.79rem;
+  font-weight: bolder;
+  color: #000000; }
+
+.text_box_sell_payout:focus {
+  background: none; }
+
+.sellandpayout_v2 .text_box_sell_payout {
+  background: none;
+  border: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-shadow: none;
+  font-size: 0.79rem;
+  font-weight: bolder;
+  color: #000000; }
+
+.sellandpayout_v2 .ammount_dollar_payout {
+  padding: 0px 10px;
+  color: #a0a6ac; }
+
+.sellandpayout_v2 .currency_sell_payout {
+  border-top: none !important; }
+
+.sellandpayout_v2 .button_toogle_tranfer {
+  margin-top: 86px;
+  text-align: center; }
+
+.payot_transfer_section {
+  padding-top: 100px; }
+
+.currency_payrol_display {
+  font-size: 0.79rem;
+  font-weight: bolder;
+  border-bottom: 1px solid #dee2e6; }
+
+.sellandpayout_v2 .persona_screen-payout {
+  margin-bottom: 0px;
+  font-size: 0.7rem;
+  color: #a0a6ac;
+  font-weight: 600; }
+
+.sellandpayout_v2 .fisrt_section_payout_screen {
+  padding-bottom: 20px;
+  padding-top: 20px; }
+
+/* table width*/
+.sellandpayout_v2 .gbr_payout {
+  width: 52%; }
+
+.sellandpayout_v2 .ammount_dollar_payout_1 {
+  color: #a0a6ac; }
+
+.sellandpayout_v2 .select_in_tranfer_payout {
+  background-color: #ffffff0f !important;
+  border: none;
+  direction: rtl;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000000;
+  outline: 0;
+  box-shadow: none; }
+
+li .active {
+  color: #000000; }
+
+.url_display {
+  padding: 0px 10px;
+  color: #a0a6ac; }
+
+.url_display:hover {
+  padding: 0px 10px;
+  color: #a0a6ac; }
+
+.sellandpayout_v2 .option_in_tarnfer_payout {
+  background: none;
+  border: none;
+  border-radius: 0px;
+  font-size: 0.79rem;
+  font-weight: bold;
+  color: #808080; }
+
+.sellandpayout_v2 .table_section_payout {
+  padding: 25px 0px 0px 0px;
+  white-space: nowrap; }
+
+.sellandpayout_v2 .contine_button_payout {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+
+.sellandpayout_v2 .input_group_section_payout {
+  padding-top: 121px;
+  padding-bottom: 551px; }
+
+/* prifile page start*/
+.sellandpayout_v2 .select_in_tranfer_profile {
+  direction: ltr;
+  border: none;
+  background-color: #ffffff0f !important;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000000;
+  outline: 0;
+  box-shadow: none; }
+
+.sellandpayout_v2 .contine_button_profile {
+  padding-bottom: 13px; }
+
+.sellandpayout_v2 .pdf_button {
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 0px;
+  font-weight: 700;
+  padding: 15px 15px;
+  border: 2px solid #000000;
+  box-shadow: none;
+  outline: none;
+  font-size: 1.25rem; }
+
+.sellandpayout_v2 .footer_in_accounts_profile {
+  position: absolute;
+  bottom: 0px; }
+
+.sellandpayout_v2 .input_group_section_profile {
+  padding-top: 121px;
+  padding-bottom: 243px; }
+
+/*.sellandpayout_v2    .general_profile_user
+{
+      padding-bottom: calc(100% - 993px);
+}
+*/
+.sellandpayout_v2 .user_group_text_active_profile {
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 0px;
+  /*height: $fts4;*/
+  outline: none !important;
+  box-shadow: none;
+  color: #EBBC4C;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding-left: 0px; }
+
+.toogle_button_profile {
+  position: absolute;
+  top: 124px; }
+
+/* radio button*/
+.sellandpayout_v2 .btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show > .btn-warning.dropdown-toggle {
+  color: #181818;
+  background: none;
+  border: none;
+  font-size: 0.81rem;
+  font-weight: bold;
+  cursor: pointer; }
+
+.sellandpayout_v2 .btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show > .btn-warning.dropdown-toggle:focus {
+  background: none;
+  border: none;
+  outline: 0 !Important;
+  box-shadow: none !important; }
+
+.sellandpayout_v2 .btn-warning {
+  background: none;
+  border: none;
+  color: #a0a6ac;
+  font-size: 0.81rem;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+/*
+Select Country Dropdown
+Last Updated on 14-07-2020
+*/
+.sellandpayout_v2 .select2-container--default {
+  font-family: Arial !important;
+  font-size: 0.8rem !important;
+  outline: none !important; }
+
+.select2-container--default .selection {
+  outline: none !important; }
+
+.select2-container--default .select2-selection--single {
+  background: none !important;
+  border: 0 !important;
+  border-radius: 0 !important; }
+
+.select2-container--default .select2-selection--single:focus {
+  outline: 0 !important; }
+
+.select2-container--default .select2-results__options {
+  font-size: 0.86rem; }
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background: #000000 !important;
+  color: #ffffff !important;
+  font-size: 0.86rem; }
+
+.select2-container--default .select2-results__option--selected {
+  background-color: 0 !important;
+  color: #fff !important;
+  font-size: 0.86rem; }
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  font-size: 0.86rem !important; }
+
+/*confirm screen*/
+.sellandpayout_v2 .img_edit_details_confirm {
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.9rem; }
+
+.sellandpayout_v2 .img_edit_details_confirm:hover {
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none; }
+
+/* done page*/
+.sellandpayout_v2 .invoice_done {
+  font-size: 1.5rem;
+  /*changed from 2rem to 1.5rem on 02-07-2020*/ }
+
+.sellandpayout_v2 .page_content_done_page {
+  padding-top: 60px; }
+
+.sellandpayout_v2 .account_done {
+  width: 30%; }
+
+.sellandpayout_v2 .account_deatils_number_done {
+  color: #a0a6ac !important; }
+
+.sellandpayout_v2 .btn_pdf_button {
+  width: 100%;
+  background: none;
+  color: #181818;
+  border-radius: 0px;
+  font-weight: 700;
+  padding: 15px 15px;
+  border: 1px solid #181818;
+  box-shadow: none;
+  outline: none;
+  font-size: 1.25rem; }
+
+.sellandpayout_v2 .text_report {
+  font-size: 0.81rem;
+  color: #181818;
+  font-weight: bold; }
+
+.sellandpayout_v2 .persona_screen {
+  margin-bottom: 0px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #181818;
+  opacity: 0.4; }
+
+/*New Style*/
+.sellandpayout_v2 .chart_title {
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #181818;
+  opacity: 0.4; }
+
+/* 19/11/2019*/
+/* tab changing in exchang */
+.sellandpayout_v2 .btn_report_new_design.active {
+  background: linear-gradient(180deg, rgba(235, 189, 76, 0.4) 0%, rgba(252, 206, 94, 0.4) 100%), #EBBC4C;
+  border-radius: 0px;
+  padding: 14px 24px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #181818;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  cursor: pointer; }
+
+.sellandpayout_v2 .btn_report_new_design {
+  color: #181818;
+  background: #dddddd;
+  border-radius: 0px;
+  padding: 14px 24px;
+  font-size: 0.81rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer; }
+
+.sellandpayout_v2 .radio_button_group_exchange {
+  padding-top: 40px;
+  padding-bottom: 48px; }
+
+/* buy coins start*/
+.sellandpayout_v2 .contine_button_buy_coins {
+  padding-bottom: 100px; }
+
+.sellandpayout_v2 .active_buy_coins {
+  opacity: 0.4; }
+
+.sellandpayout_v2 .report_button_click {
+  position: sticky;
+  top: 50%; }
+
+/* buy coins end*/
+/* loard card start*/
+.sellandpayout_v2 .gold_loard_card {
+  border-top: 1px solid #dee2e6; }
+
+.sellandpayout_v2 .gold_sliver_laodcrad_header {
+  padding: 14px 40px !important; }
+
+.sellandpayout_v2 .slidecontainer_loard {
+  padding-top: 45px;
+  padding-bottom: 20px; }
+
+/* loard card end*/
+/* welcome page start*/
+.sellandpayout_v2 .welcome_page_active {
+  font-size: 0.8rem;
+  font-weight: 700; }
+
+.sellandpayout_v2 .ative_iones_welcones {
+  color: #EBBC4C; }
+
+.sellandpayout_v2 .gold_loard_card_welcome {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
+
+.sellandpayout_v2 .ative_iones_welcones_sliver {
+  color: #dddddd; }
+
+.sellandpayout_v2 .google_pie_chart_welcome {
+  width: 100%;
+  height: 380px;
+  position: absolute;
+  top: -17px; }
+
+.sellandpayout_v2 .user_total_views {
+  color: #EBBC4C !important; }
+
+.sellandpayout_v2 .input_group_section {
+  padding-top: calc(100% - 307px);
+  /* padding-bottom: 14px;*/ }
+
+.sellandpayout_v2 .list_menus_li:hover {
+  text-decoration: none; }
+
+.sellandpayout_v2 .list-group-item.active > a {
+  color: #EBBC4C !important;
+  border: none; }
+
+.sellandpayout_v2 .list-group-item.active {
+  background: url("../../static/beta/new-menu-highlight.svg") no-repeat right !important; 
+}
+
+.sellandpayout_v2 .list-group .list-group-item a {
+  color: #FFFFFF;
+  text-decoration: none; }
+
+.sellandpayout_v2 .list-group .list-group-item a:hover {
+  color: #FFFFFF;
+  text-decoration: none; }
+
+.sellandpayout_v2 .list-group-item {
+  border-bottom: 1px solid #ffffff52 !important;
+  padding: 13px 0px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none; }
+
+.sellandpayout_v2 .list_group_item_border_remove {
+  border-bottom: none !important; }
+
+.sellandpayout_v2 .ul_class_section {
+  margin-bottom: 13px; }
+
+/*side bar fixed end*/
+/* media queries*/
+@media screen and (max-width: 736px) and (min-width: 300px) {
+  .sellandpayout_v2 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 14px; }
+
+  .sellandpayout_v2 .nav-pills .nav-link {
+    padding: 14px 14px; }
+
+  .sellandpayout_v2 .button_toogle {
+    top: 10px; }
+
+  .sellandpayout_v2 .pdf_button {
+    margin: 20px 0px; }
+
+  .sellandpayout_v2 .gbr_payout {
+    width: 0px; }
+
+  .sellandpayout_v2 .swithbutton_append {
+    margin-left: 164px; } }
+@media screen and (max-width: 320px) and (min-width: 300px) {
+  .sellandpayout_v2 .nav-pills .nav-link {
+    padding: 14px 7px; }
+
+  .sellandpayout_v2 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 9px; }
+
+  .sellandpayout_v2 .button_toogle {
+    top: 0px; } }
+@media screen and (max-width: 823px) and (min-width: 800px) {
+  .sellandpayout_v2 .company_logo_text {
+    font-size: 1rem; }
+
+  .sellandpayout_v2 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 20px; }
+
+  .sellandpayout_v2 .nav-pills .nav-link {
+    padding: 14px 20px; }
+
+  .sellandpayout_v2 .number_footer_1 {
+    padding-top: 10px; }
+
+  .sellandpayout_v2 .input_group_section {
+    padding-bottom: 143px; }
+
+  .sellandpayout_v2 .swithbutton_append_apple_pay {
+    margin-left: 12px; }
+
+  .sellandpayout_v2 .swithbutton_append {
+    position: absolute;
+    left: 96px;
+    margin-left: 0px; }
+
+  .sellandpayout_v2 .debit_ammount_payout {
+    padding: 30px 0px 55px 0px; }
+
+  .sellandpayout_v2 .arrow_icon_tranfer {
+    max-width: 100%;
+    float: right; }
+
+  .sellandpayout_v2 .fisrt_coulum_backcolor {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .sellandpayout_v2 .general_profile_user {
+    padding-bottom: calc(100% - 435px); }
+
+  .sellandpayout_v2 .input_group_section {
+    padding-top: calc(100% - 125px); } }
+@media screen and (max-width: 736px) and (min-width: 600px) {
+  .sellandpayout_v2 .swithbutton_append {
+    margin-left: 322px; }
+
+  .sellandpayout_v2 .swithbutton_append_apple_pay {
+    margin-left: 375px; }
+
+  .sellandpayout_v2 .pdf_button {
+    margin: 20px 0px; } }
+@media screen and (max-width: 768px) and (min-width: 760px) {
+  .sellandpayout_v2 .company_logo_text {
+    font-size: 1rem; }
+
+  .sellandpayout_v2 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 20px; }
+
+  .sellandpayout_v2 .nav-pills .nav-link {
+    padding: 14px 20px; }
+
+  .sellandpayout_v2 .number_footer_1 {
+    padding-top: 10px; }
+
+  .sellandpayout_v2 .input_group_section {
+    padding-bottom: 143px; }
+
+  .sellandpayout_v2 .swithbutton_append_apple_pay {
+    margin-left: 12px; }
+
+  .sellandpayout_v2 .swithbutton_append {
+    position: absolute;
+    left: 96px;
+    margin-left: 0px; }
+
+  .sellandpayout_v2 .footer_in_accounts_profile {
+    padding-top: 85px; }
+
+  .sellandpayout_v2 .debit_ammount_payout {
+    padding: 30px 0px 55px 0px; }
+
+  .sellandpayout_v2 .input_group_section_payout {
+    padding-top: 121px;
+    padding-bottom: 505px; }
+
+  .sellandpayout_v2 .footer_row {
+    position: absolute;
+    width: 100%; } }
+/* 1000px to 1024px*/
+@media screen and (max-width: 1024px) and (min-width: 1000px) {
+  .sellandpayout_v2 .company_logo_text {
+    font-size: 1rem; }
+
+  .sellandpayout_v2 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    padding: 14px 20px; }
+
+  .sellandpayout_v2 .nav-pills .nav-link {
+    padding: 14px 20px; }
+
+  .sellandpayout_v2 .number_footer_1 {
+    padding-top: 21px; }
+
+  .sellandpayout_v2 .footer_in_accounts_profile {
+    padding-top: 55px; }
+
+  .sellandpayout_v2 .input_group_section_payout {
+    padding-bottom: 565px; }
+
+  .sellandpayout_v2 .input_group_section {
+    padding-bottom: 0px !important; }
+
+  .sellandpayout_v2 .swithbutton_append {
+    position: absolute;
+    left: 142px;
+    margin-left: 0px; }
+
+  .sellandpayout_v2 .contine_button {
+    padding-bottom: 176px; }
+
+  .sellandpayout_v2 .claculate_payout_row {
+    padding-bottom: calc(100% - 567px); }
+
+  .sellandpayout_v2 .general_profile_user {
+    padding-bottom: calc(100% - 629px); } }
+/* 1360px to 136px*/
+@media screen and (max-width: 1366px) and (min-width: 1360px) {
+  .sellandpayout_v2 .swithbutton_append {
+    margin-left: 117px; }
+
+  .sellandpayout_v2 .swithbutton_append_apple_pay {
+    margin-left: 180px; }
+
+  .sellandpayout_v2 .fullscreen {
+    position: absolute;
+    top: 0;
+    bottom: 0; }
+
+  .sellandpayout_v2 .claculate_payout_row {
+    padding-bottom: calc(100% - 849px); }
+}
+  
+/*1000 to 1366*/
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  .sellandpayout_v2 .input_group_section {
+    padding-bottom: 11px; } }
+/*1366 to 1660*/
+@media screen and (max-width: 1660px) and (min-width: 1360px) {
+  .sellandpayout_v2 .arrow_image_payout {
+    right: 10px; } }
+
+/*# sourceMappingURL=dashboard_v2.css.map */

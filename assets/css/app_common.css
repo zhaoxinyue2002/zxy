@@ -1,0 +1,555 @@
+/*font family*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet');
+/* theme background color*/
+/* light themes color*/
+/* disable buuton*/
+/* backgroung in full color*/
+/* tb color*/
+/* tab text color*/
+/* button color*/
+/* button garident color*/
+/* login diable buttn color*/
+/*  fontsize*/
+/* text align*/
+/* font weight*/
+/* fontfamily*/
+/* direction text*/
+/* text and label color*/
+/* table */
+/* postion*/
+/*media queries*/
+/* regression screen scss*/
+/* active button color*/
+/* inactive button*/
+/* inactive tab*/
+/*Custom Text Color*/
+/****************** report in load more button color******************/
+@font-face {
+  font-family: "OCR-A";
+  src: url(../../static/font/OCR-A.ttf); }
+/* Page Title */
+h1 {
+  font-size: 2rem !important; }
+
+/* Navigation Panel */
+.logo_section_common .input_group_section {
+  padding-top: calc(100% - 15rem) !important; }
+
+/*Side Menu Drawer*/
+#sidebar_menudrawer_box_wrapper .select_box {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #f0f0f0; }
+
+#sidebar_menudrawer_box_wrapper .select_box option {
+  background: #101010;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 0.81rem;
+  font-weight: bold;
+  color: #f0f0f0; }
+
+#sidebar_menudrawer_box_wrapper .list-group-item {
+  border: none !important;
+  padding: 13px 0px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none; }
+
+#sidebar_menudrawer_wrapper span.title {
+  position: absolute;
+  top: 4rem;
+  right: -1rem;
+  color: #181818;
+  opacity: 0.4;
+  font-size: 1rem;
+  font-weight: bold; }
+
+/*Vault Holding Screen*/
+.vault_slider_wrapper {
+  padding: 0.3rem 3rem; }
+
+.vault_slider_wrapper .slider {
+  position: absolute;
+  cursor: pointer;
+  top: -6px;
+  left: -7px;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: -0.6s;
+  padding: 14px; }
+
+.vault_slider_wrapper .slider:before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  width: 7px;
+  left: 8px;
+  bottom: 10px;
+  background-color: #181818;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 100%; }
+
+.vault_slider_wrapper .slider_text {
+  font-size: 1rem;
+  color: #181818;
+  opacity: 0.4;
+  border: none;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  top: 6px; }
+
+/*Card Section*/
+.vault_card_wrapper {
+  position: relative !important; 
+}
+
+.vault_card_wrapper .card_img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  max-width: 450px;
+  right: 10px;
+  bottom: 0;
+}
+
+.vault_card_wrapper .card_no {
+  font-family: "OCR-A";
+  position: absolute;
+  color: #fff; 
+  font-size: 1.7rem;
+  top: 55%;
+  right: 40px;
+}
+
+.vault_card_wrapper .card_title {
+  font-family: "OCR-A";
+  position: absolute;
+  color: #fff; 
+  font-size: 1.2rem;
+  top: 75%;
+  right: 30px;
+}
+
+@media screen and (max-width: 1500px) {
+  .vault_card_wrapper .card_no {
+    font-size: 1.5rem;
+    top:57%;
+    right: 30px;
+  }
+  
+  .vault_card_wrapper .card_title {
+    font-size: 1.2rem;
+    top: 78%;
+    right: 25px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .vault_card_wrapper .card_no {
+    font-size: 1.4rem;
+    top: 60%;
+    right: 30px;
+  }
+  
+  .vault_card_wrapper .card_title {
+    font-size: 1.2rem;
+    top: 80%;
+    right: 25px;
+  }
+}
+
+@media screen and (max-width: 1220px) {  
+  .vault_card_wrapper .card_no {
+    font-size: 1.3rem;
+    top: 65%;
+    right: 30px;
+  }
+  
+  .vault_card_wrapper .card_title {
+    font-size: 1.2rem;
+    top: 80%;
+    right: 25px;
+  }
+}
+
+@media screen and (max-width: 1150px) {  
+  .vault_card_wrapper .card_no {
+    font-size: 1.2rem;
+    top: 70%;
+    right: 25px;
+  }
+  
+  .vault_card_wrapper .card_title {
+    font-size: 1.0rem;
+    top: 83%;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 1040px) {  
+  .vault_card_wrapper .card_no {
+    font-size: 1.0rem;
+    top: 70%;
+    right: 20px;
+  }
+  
+  .vault_card_wrapper .card_title {
+    font-size: 1.0rem !important;
+    top: 85%;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {  
+  .vault_card_wrapper .card_no {
+    font-size: 0.9rem;
+    top: 75%;
+    right: 20px;
+  }
+  
+  .vault_card_wrapper .card_title {
+    font-size: 0.8rem !important;
+    top: 85%;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 880px) {  
+  .vault_card_wrapper .card_no {
+    font-size: 0.9rem;
+    top: 80%;
+    right: 20px;
+  }
+  
+  .vault_card_wrapper .card_title {
+    font-size: 0.8rem !important;
+    top: 87%;
+    right: 20px;
+  }
+}
+
+.card_operations tr td {
+  border-top: 2px solid #e0e0e0 !important;
+  border-bottom: 2px solid #e0e0e0 !important;
+  margin: 0px 0 !important;
+  padding: 19px 0 !important;
+  font-weight: normal;
+  font-size: 0.9rem !important;
+  color: #6f6f6f !important;
+  opacity: 1; }
+
+.pin_block .front {
+  cursor: pointer;
+  background: linear-gradient(180deg, rgba(235, 189, 76, 0.4) 0%, rgba(252, 206, 94, 0.4) 100%), #EBBC4C;
+  border: none;
+  color: #181818;
+  border-radius: 0px;
+  font-weight: bold;
+  padding: 6px 34px;
+  box-shadow: none;
+  outline: none;
+  font-size: 0.86rem; }
+
+.pin_block .back {
+  cursor: pointer;
+  background: linear-gradient(180deg, rgba(235, 189, 76, 0.4) 0%, rgba(252, 206, 94, 0.4) 100%), #EBBC4C;
+  border: none;
+  color: #181818;
+  border-radius: 0px;
+  font-weight: bold;
+  padding: 6px 34px;
+  box-shadow: none;
+  outline: none;
+  font-size: 0.86rem;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.pin_block.flipped {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.card_text {
+  font-size: 0.9rem;
+  color: #181818;
+  opacity: 0.4; }
+
+/*Lock Online Purchase*/
+.show_lock_unlock_switch_wrapper {
+  border-bottom: 1px solid #cac9c9;
+  float: left;
+  width: 100%; }
+
+.show_lock_unlock_switch_wrapper .lbl_show_pin {
+  font-size: 0.81rem;
+  color: #181818;
+  opacity: 0.4;
+  font-weight: bold;
+  margin-bottom: 19px;
+  float: right;
+  position: relative;
+  top: 12px; }
+
+.show_lock_unlock_switch_wrapper .switch_wrapper {
+  background: none;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 0px;
+  height: 2.8rem;
+  outline: none !important;
+  box-shadow: none;
+  color: #F0F0F0;
+  padding-left: 6px;
+  font-size: 0.81rem;
+  font-weight: bold; }
+
+.show_lock_unlock_switch_wrapper .switch_wrapper .switch {
+  position: relative;
+  display: inline-block;
+  width: 63px;
+  height: 16px;
+  float: right; }
+
+.show_lock_unlock_switch_wrapper .switch_wrapper .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: -7px;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.show_lock_unlock_switch_wrapper .switch_wrapper .switch input.default:checked + .slider {
+  background-color: #EBBC4C; }
+
+.show_lock_unlock_switch_wrapper .switch_wrapper .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  width: 7px;
+  left: 8px;
+  bottom: 4px;
+  background-color: #181818;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 100%; }
+
+/*Suspend Button*/
+.btn_card_suspend {
+  background: #e20004;
+  border: none;
+  color: #ffffff;
+  border-radius: 0px;
+  font-weight: bold;
+  padding: 6px 16px;
+  box-shadow: none;
+  outline: none;
+  font-size: 0.86rem; }
+
+.suspend_btn_wrapper .lbl {
+  font-size: 0.81rem;
+  color: #181818;
+  opacity: 0.4;
+  font-weight: bold;
+  margin-bottom: 19px;
+  float: right;
+  position: relative;
+  top: 12px; }
+
+/*Buy Coins*/
+.account_list_drop_down {
+  background-color: #ffffff0f !important;
+  border: 1px solid #e0e0e0;
+  border-radius: 0px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000000;
+  outline: 0;
+  height: 2.8rem;
+  box-shadow: none; }
+
+.account_list_drop_down:focus {
+  border: 1px solid #e0e0e0 !important;
+  box-shadow: none !important; }
+
+/*
+=====================
+My Profile
+====================
+*/
+.myprofile {
+  font-family: Arial !important; }
+
+.myprofile label {
+  font-size: 0.78rem; }
+
+.myprofile .row_color {
+  /*border-bottom: 1px solid rgb(224, 224, 224) !important;*/
+  padding-bottom: 0.7rem; }
+
+.myprofile .txt_box {
+  background: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #e0e0e0;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-shadow: none;
+  font-size: 0.79rem;
+  font-weight: bolder;
+  color: #000000;
+  border-radius: 0; }
+
+.myprofile .select_box {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #e0e0e0;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-shadow: none;
+  font-size: 0.79rem;
+  font-weight: bolder;
+  color: #000000;
+  border-radius: 0;
+  height: auto; }
+
+/*Switch CSS*/
+.myprofile .ATM_withdrawal_switch_button {
+  float: left;
+  height: 0.8rem !important;
+  margin: 2px 17px; }
+
+.myprofile .ATM_withdrawal_switch_button ul {
+  float: left;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: block; }
+
+.myprofile .card_help_txt {
+  color: #adadad;
+  font-size: 0.71rem; }
+
+.myprofile .btn_submit {
+  background: linear-gradient(180deg, #1f1f1f 0%, #101010 100%), #101010;
+  border: none;
+  color: #ffffff;
+  border-radius: 0px;
+  font-weight: bold;
+  padding: 11px 39px;
+  box-shadow: none;
+  outline: none;
+  font-size: 1rem; }
+
+.myprofile div.error {
+  font-size: 0.7rem;
+  color: #c72828; }
+
+ /*
+===============================
+Confirmation Screen(s) - Line 2
+===============================
+*/
+.msg_confirmation_screen {
+  font-weight: normal;
+  font-size: 1.2rem; }
+
+#resend_profile_confirm_otp {
+  color: #181818 !important; }
+
+ /*
+===============================
+Medium Desktop Resolutions
+===============================
+*/
+@media (min-width: 992px) {
+  .vault_card_wrapper .card_title {
+    font-family: "OCR-A";
+    text-align: right;
+    position: absolute;
+    right: 7.6rem;
+    bottom: 3.5rem;
+    vertical-align: bottom;
+    color: #fff;
+    font-size: 0.8rem;
+    width: 100%;
+    /* max-width: 100%; */
+    float: left; } }
+@media (min-width: 1200px) {
+  .logo_section_common .input_group_section {
+    padding-top: calc(100% - 22rem) !important; } }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Retina-specific stuff here */
+  .vault_card_wrapper .card_title {
+    font-family: "OCR-A";
+    text-align: right;
+    position: absolute;
+    right: 2.7rem;
+    bottom: 3.5rem;
+    vertical-align: bottom;
+    color: #fff;
+    font-size: 0.8rem;
+    width: 100%;
+    /* max-width: 100%; */
+    float: left; }
+
+  .vault_card_wrapper .card_no {
+    font-family: "OCR-A";
+    text-align: right;
+    position: absolute;
+    right: 2.4rem;
+    top: 9.1rem;
+    vertical-align: bottom;
+    color: #fff;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    float: left; } }
+/* Transfer Bullion */
+.bar_info_block .icon_block {
+  max-width: 4rem;
+  text-align: left;
+  float: left; }
+
+.bar_info_block .content_block {
+  font-size: 0.9rem;
+  width: auto;
+  float: left;
+  font-weight: bold; }
+
+.bar_info_block .content_block .info {
+  font-size: 0.7rem; }
+
+/*# sourceMappingURL=app_common.css.map */
+
+.vertical-stretch {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow-y: auto;
+}
+
+.logo_section_common {
+  width: 100%;
+}
