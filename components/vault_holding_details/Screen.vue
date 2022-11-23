@@ -63,14 +63,19 @@
                                 <tbody>
                                             <tr>
                                                 <td>Gold Bars Oz LBMA</td>
-                                                <td><!-- <?php echo $balance_result['goldbar']['account_no']; ?> -->1</td>
+                                                <td>
+                                                  {{balance_results.Gold.AccountNumber}}
+                                                  <!-- <?php echo $balance_result['goldbar']['account_no']; ?> -->
+                                                  </td>
                                                 <td id="lbl_gold_bar_market_price"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$gold_bar_per_market_price, 2, '.', ','); ?> -->€2</td>
                                                 <td id="lbl_gold_bar_qty"><!-- <?php echo number_format((float)$balance_result['goldbar']['balance'], 2, '.', ','); ?> -->3</td>
                                                 <td id="lbl_gold_bar_total"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$gold_bar_market_price, 2, '.', ','); ?> -->€4</td>
                                             </tr>
                                             <tr>
                                                 <td>Gold Eagles American</td>
-                                                <td><!-- <?php echo $balance_result['gold']['account_no']; ?> -->5</td>
+                                                <td>
+                                                  {{balance_results.Goldbar.AccountNumber}}
+                                                  <!-- <?php echo $balance_result['gold']['account_no']; ?> --></td>
                                                 <td id="lbl_gold_market_price"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$balance_result['gold']['market_price'], 2, '.', ','); ?> -->€6</td>
                                                 <td id="lbl_gold_qty"><!-- <?php echo number_format((float)$balance_result['gold']['balance'], 2, '.', ','); ?> -->7</td>
                                                 <td id="lbl_gold_total"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$balance_result['gold']['conversion_rate'], 2, '.', ','); ?> -->€8</td>
@@ -191,7 +196,9 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-12 col-xl-6 col-lg-6 col-md-6">
-                            <p class="total_account"><!-- <?php echo ($master_card_bal != null) ? $this->currency_symbol_arr[$balance_result['card']['currency']] . ' ' . $master_card_bal : ''; ?> -->€23</p>
+                            <p class="total_account">
+                              <!-- <?php echo ($master_card_bal != null) ? $this->currency_symbol_arr[$balance_result['card']['currency']] . ' ' . $master_card_bal : ''; ?> -->
+                              €23</p>
 
                             <table class="table card_operations">
                                 <tr>
@@ -240,11 +247,70 @@
 export default {
   data(){
     return{
+      valueOrPercent: true,
         tabIndex : 0,
-        valueOrPercent: true
+        data:{
+            ResponseResult:{
+          Goldbar:{
+            AccountNumber:""
+          },
+          Gold:{
+            AccountNumber:""
+          }
+      }
+     },
+     balance_results:{},
+     profitloss_arrays:[]
     }
   },
+  mounted(){
+    this.$store.commit('setLoadingContent', true);
+    this.fetchData();
+  },
   methods:{
+    async fetchData(){
+      console.log('fetchData');
+      var currency_result = await this.$api.$get('exchange_price/type_based');
+      // console.log(currency_result);
+
+      var body = new FormData();
+      body.append('username', 'yang@goldensuisse.com');
+      var balance_result = await this.$api.$post('getBalance', body);
+      console.log(balance_result);
+      this.balance_results = balance_result.ResponseResult
+      console.log(this.balance_results,'66666')
+
+      var profitloss_array = await this.$api.$post('profit_loss/get_profit_loss', body);
+      this.profitloss_arrays = profitloss_array.ResponseResult
+
+      // if (balance_result.ResponseCode != '0') {
+      //   return;
+      // }
+      // if (profitloss_array.ResponseCode != '0') {
+      //   return;
+      // }
+
+      // var total_purchase = 0;
+      // var total_profit = 0;
+      // var profitloss = {};
+
+      // for (let i = 0; i < profitloss_array.ResponseResult.length; i++) {
+      //   var profitloss_item = profitloss_array.ResponseResult[i];
+      //   profitloss[profitloss_item.Bullion] = profitloss_item;
+      //   total_purchase += profitloss_item.accumulatedPurchases;
+      //   total_profit += profitloss_item.profitLoss;
+      // }
+
+      // var profit_percent = 0;
+      // if (total_purchase > 0) {
+      //   profit_percent = total_profit * 100 / total_purchase;
+      // }
+
+      // var default_currency = this.$store.state.app_currency;
+      // var total_balance = 0;
++
+      this.$store.commit('setLoadingContent', false);
+    },
     change(index){
       this.tabIndex = index;
     },
@@ -252,6 +318,7 @@ export default {
       this.valueOrPercent = !this.valueOrPercent;
       console.log(this.valueOrPercent);
     }
+
   }
 
 }
