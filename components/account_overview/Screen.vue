@@ -462,7 +462,7 @@ export default {
         total_profit: total_profit,
         profit_percent: profit_percent
       }
-      console.log(this.data);
+      // console.log(this.data);
       this.$store.commit('setLoadingContent', false);
     },
     changeValueOrPercent(event) {
