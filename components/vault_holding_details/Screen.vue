@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="this.$store.state.loadingContent == false && this.data != null">
     <div class="tab_section">
         <ul class="nav nav-pills mb-3 float-left w-auto option_tab" id="pills-tab" role="tablist">
             <li class="nav-item">
@@ -61,35 +61,35 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                            <tr>
-                                                <td>Gold Bars Oz LBMA</td>
-                                                <td>
-                                                  {{balance_results.Gold.AccountNumber}}
-                                                  <!-- <?php echo $balance_result['goldbar']['account_no']; ?> -->
-                                                  </td>
-                                                <td id="lbl_gold_bar_market_price"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$gold_bar_per_market_price, 2, '.', ','); ?> -->€2</td>
-                                                <td id="lbl_gold_bar_qty"><!-- <?php echo number_format((float)$balance_result['goldbar']['balance'], 2, '.', ','); ?> -->3</td>
-                                                <td id="lbl_gold_bar_total"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$gold_bar_market_price, 2, '.', ','); ?> -->€4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Gold Eagles American</td>
-                                                <td>
-                                                  {{balance_results.Goldbar.AccountNumber}}
-                                                  <!-- <?php echo $balance_result['gold']['account_no']; ?> --></td>
-                                                <td id="lbl_gold_market_price"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$balance_result['gold']['market_price'], 2, '.', ','); ?> -->€6</td>
-                                                <td id="lbl_gold_qty"><!-- <?php echo number_format((float)$balance_result['gold']['balance'], 2, '.', ','); ?> -->7</td>
-                                                <td id="lbl_gold_total"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$balance_result['gold']['conversion_rate'], 2, '.', ','); ?> -->€8</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Total in vault</td>
-                                                <td colspan="2">&nbsp;</td>
-                                                <td id="lbl_total_qty_gold_gold_bar"><!-- <?php echo number_format((float)($gold_bar_qty + $gold_qty), 2, '.', ','); ?> -->9</td>
-                                                <td id="lbl_total_gold_gold_bar"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)($gold_bar_market_price + $gold_market_price), 2, '.', ','); ?> -->€10</td>
-                                            </tr>
+                                      <tr v-if="data.balance_result.gold != null">
+                                          <td>Gold Bars Oz LBMA</td>
+                                          <td>
+                                            {{ data.balance_result.goldbar.account_no }}
+                                            </td>
+                                          <td id="lbl_gold_bar_market_price">
+                                            <!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$gold_bar_per_market_price, 2, '.', ','); ?> -->
+                                            €2</td>
+                                          <td id="lbl_gold_bar_qty"><!-- <?php echo number_format((float)$balance_result['goldbar']['balance'], 2, '.', ','); ?> -->3</td>
+                                          <td id="lbl_gold_bar_total"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$gold_bar_market_price, 2, '.', ','); ?> -->€4</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Gold Eagles American</td>
+                                          <td>
+                                            <!-- <?php echo $balance_result['gold']['account_no']; ?> --></td>
+                                          <td id="lbl_gold_market_price"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$balance_result['gold']['market_price'], 2, '.', ','); ?> -->€6</td>
+                                          <td id="lbl_gold_qty"><!-- <?php echo number_format((float)$balance_result['gold']['balance'], 2, '.', ','); ?> -->7</td>
+                                          <td id="lbl_gold_total"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$balance_result['gold']['conversion_rate'], 2, '.', ','); ?> -->€8</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Total in vault</td>
+                                          <td colspan="2">&nbsp;</td>
+                                          <td id="lbl_total_qty_gold_gold_bar"><!-- <?php echo number_format((float)($gold_bar_qty + $gold_qty), 2, '.', ','); ?> -->9</td>
+                                          <td id="lbl_total_gold_gold_bar"><!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)($gold_bar_market_price + $gold_market_price), 2, '.', ','); ?> -->€10</td>
+                                      </tr>
 
-                                        <tr>
-                                            <td colspan="5" align="center">No Accounts found!!!</td>
-                                        </tr>
+                                  <tr>
+                                      <td colspan="5" align="center">No Accounts found!!!</td>
+                                  </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -210,7 +210,6 @@
                                     </td>
                                     <td class="text-right card_text">Retrieve PIN Code</td>
                                 </tr>
-
                                 <tr>
                                     <td>
                                         <span class="input-group-text border-0 m-0" id="basic-addon2">
@@ -243,74 +242,118 @@
     </div>
 </div>
 </template>
+
 <script>
 export default {
-  data(){
-    return{
+  data() {
+    return {
       valueOrPercent: true,
-        tabIndex : 0,
-        data:{
-            ResponseResult:{
-          Goldbar:{
-            AccountNumber:""
-          },
-          Gold:{
-            AccountNumber:""
-          }
-      }
-     },
-     balance_results:{},
-     profitloss_arrays:[]
+      tabIndex: 0,
+      data: null
     }
   },
-  mounted(){
+  mounted() {
     this.$store.commit('setLoadingContent', true);
     this.fetchData();
   },
   methods:{
     async fetchData(){
-      console.log('fetchData');
-      var currency_result = await this.$api.$get('exchange_price/type_based');
-      // console.log(currency_result);
-
       var body = new FormData();
-      body.append('username', 'yang@goldensuisse.com');
-      var balance_result = await this.$api.$post('getBalance', body);
+      body.append('username','yang@goldensuisse.com');
+      var balance_result = await this.$api.$post('getBalance',body);
       console.log(balance_result);
-      this.balance_results = balance_result.ResponseResult
-      console.log(this.balance_results,'66666')
 
-      var profitloss_array = await this.$api.$post('profit_loss/get_profit_loss', body);
-      this.profitloss_arrays = profitloss_array.ResponseResult
+      var currency_result = await this.$api.$get('exchange_price/type_based');
+      console.log(currency_result);
 
-      // if (balance_result.ResponseCode != '0') {
-      //   return;
-      // }
-      // if (profitloss_array.ResponseCode != '0') {
-      //   return;
-      // }
+      var default_currency = this.$store.state.app_currency;
+      var total_balance = 0;
 
-      // var total_purchase = 0;
-      // var total_profit = 0;
-      // var profitloss = {};
+      //Golden Eagle
+      var final_result = {
+        gold: {
+          account_no: balance_result.ResponseResult.Gold.AccountNumber,
+          balance: 1 * balance_result.ResponseResult.Gold.AvailableBalance,
+          title: 'Gold Coins',
+          market_price: currency_result.ResponseResult.XAU[default_currency].buy_price,
+          conversion_rate: 1 * balance_result.ResponseResult.Gold.AvailableBalance * currency_result.ResponseResult.XAU[default_currency].buy_price,
+        }
+      }
+      total_balance += final_result.gold.conversion_rate;
 
-      // for (let i = 0; i < profitloss_array.ResponseResult.length; i++) {
-      //   var profitloss_item = profitloss_array.ResponseResult[i];
-      //   profitloss[profitloss_item.Bullion] = profitloss_item;
-      //   total_purchase += profitloss_item.accumulatedPurchases;
-      //   total_profit += profitloss_item.profitLoss;
-      // }
+      //Gold Bar
+      if (balance_result.ResponseResult.Goldbar != null) {
+        final_result = {
+          ...final_result,
+          goldbar: {
+            account_no: balance_result.ResponseResult.Goldbar.AccountNumber,
+            balance: 1* balance_result.ResponseResult.Goldbar.AvailableBalance,
+            title:'Glod Bars',
+            market_price: currency_result.ResponseResult.XAU[default_currency].buy_price,
+            conversion_rate: 1 * balance_result.ResponseResult.Goldbar.AvailableBalance * currency_result.ResponseResult.GBAR[default_currency].buy_price,
+          }
+        }
+        total_balance += final_result.goldbar.conversion_rate;
+      }
+      //Silver Eagle
+      var final_result = {
+          silver:{
+            account_no: balance_result.ResponseResult.Silver.AccountNumber,
+            balance: 1 * balance_result.ResponseResult.Silver.AvailableBalance,
+            title: 'Silver Coins',
+            market_price: currency_result.ResponseResult.XAU[default_currency].buy_price,
+            conversion_rate: 1 * balance_result.ResponseResult.Silver.AvailableBalance * currency_result.ResponseResult.SBAR[default_currency].buy_price,
+          }
+        }
+        total_balance += final_result.silver.conversion_rate;
 
-      // var profit_percent = 0;
-      // if (total_purchase > 0) {
-      //   profit_percent = total_profit * 100 / total_purchase;
-      // }
+      //Silver Bar
+      if(balance_result.ResponseResult.Silverbar != null) {
+        final_result = {
+          ...final_result,
+          silverbar:{
+            account_no: balance_result.ResponseResult.Silverbar.AccountNumber,
+            balance: 1* balance_result.ResponseResult.Silverbar.AvailableBalance,
+            title:'Silver Bars',
+            market_price: currency_result.ResponseResult.SBAR[default_currency].buy_price,
+            conversion_rate: 1 * balance_result.ResponseResult.Silverbar.AvailableBalance * currency_result.ResponseResult.SBAR[default_currency].buy_price,
+          }
+        }
+      }
 
-      // var default_currency = this.$store.state.app_currency;
-      // var total_balance = 0;
-+
+      //Master Card
+      if(balance_result.ResponseResult.Card != null) {
+        final_result={
+          ...final_result,
+          card:{
+            account_no: balance_result.ResponseResult.Card.AccountNumber,
+            balance: balance_result.ResponseResult.Card.AvailableBalance,
+            title: 'MasterCard',
+
+
+            // currency: card_info_result.Currency,
+            // pin: card_info_result.Pin,
+            // status: card_info_result.CardStatus,
+            // online_status: card_info_result.OnlineStatus
+          }
+        }
+      }
+        //  this.param = {
+        //     cardnumber:balance_result.ResponseResult.Card.AccountNumber
+        //   }
+        //   var card_info_result = this.$store.stase.card;
+        //   console.log(card_info_result);
+        //   console.log('final_result');
+
+      this.data = {
+        balance_result : final_result,
+        default_currency: default_currency,
+        conversion_oz_value: process.env.CONVERSION_KG_OZ_VALUE
+      };
+      console.log(this.data);
       this.$store.commit('setLoadingContent', false);
     },
+    //Set Master Card - Purchase status
     change(index){
       this.tabIndex = index;
     },
@@ -318,8 +361,6 @@ export default {
       this.valueOrPercent = !this.valueOrPercent;
       console.log(this.valueOrPercent);
     }
-
   }
-
 }
 </script>
