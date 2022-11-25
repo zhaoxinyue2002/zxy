@@ -17,7 +17,7 @@ $debit_dropdown_array = array(
 );
 $is_gcb_usa_account = ($profile_result['ProfileGroupID'] == 9) ? 1 : 0;
 ?> -->
-<form action="#" method="post" name="frm-exchange" id="frm-exchange">
+<form action="#" method="post" name="frm-exchange" id="frm-exchange" v-if="this.$store.state.loadingContent == false && this.data != null">
   <div id="msg_block" class="input-field col s12">
     <!-- <?php
     if ($this->session->userdata('temp_exchange_success_msg')) {
@@ -280,8 +280,158 @@ $is_gcb_usa_account = ($profile_result['ProfileGroupID'] == 9) ? 1 : 0;
 </template>
 
 <script>
+import { format } from 'echarts';
 export default {
+  data(){
+    return{
+      data : null
+    }
+  },
+  mounted(){
+    this.$store.commit('setLoadingContent',true);
+    this.fetchData();
+  },
+  components:{},
+  methods:{
+    async fetchData(){
+      console.log('fetchData');
+      var exchange_price = await this.$api.$get('exchange_price/type_based');
+      console.log(exchange_price);
 
+      var body = new FormData();
+      body.append('username','yang@golensuisse.com')
+      var account_result = await this.$api.$post('getBalance',body);
+      console.log(account_result);
+
+
+    //   $multi_curl_array['gold_bar_info'] = array(
+		// 	'method' => 'get', "url" => APP_API_ENDPOINT . 'user_bar_accounts/?Username=' . $this->session->userdata('username') . '&Type=AU', "param" => null
+		// );
+		// $multi_curl_array['silver_bar_info'] = array(
+		// 	'method' => 'get', "url" => APP_API_ENDPOINT . 'user_bar_accounts/?Username=' . $this->session->userdata('username') . '&Type=AG', "param" => null
+		// );
+
+    // Get Bar Account Information
+		// $bar_account_info = array();
+		// $bar_account_info['Goldbar'] = json_decode($api_results['gold_bar_info'], true);
+		// $bar_account_info['Silverbar'] = json_decode($api_results['silver_bar_info'], true);
+
+      var bar_account_info = {
+        Goldbar : await this.$api.$get('user_bar_accounts/?Username=')
+      }
+
+    if (exchange_price.ResponseCode == '2000' || bar_account_info.Goldbar.ResponseCode == '2000' || bar_account_info.Silverbar.ResponseCode == '2000' || account_result.ResponseCode == '2000'){
+        return;
+    }
+    else if (exchange_price.ResponseCode != '0' || bar_account_info.Goldbar.ResponseCode != '0' || bar_account_info.Silverbar.ResponseCode != '0' || account_result.ResponseCode != '0' ){
+      redirect('exchange/content');
+			return;
+    }
+
+    this.exchange_conversion_arr = {
+      //1-Gold Coin to Silver Coin - New Price Calc Done
+        Gold_Silver : {
+          type : 1,
+          debit : 1,
+          credit : round(exchange_price.ResponseResult.XAU.USD.sell_price / exchange_price.ResponseResult.XAG.USD.buy_price ,1)
+        },
+        //2-Silver Coin to Gold Coin  - New Price Calc Done
+        Silver_Gold : {
+          type : 2,
+          debit : round(exchange_price.ResponseResult.XAU.USD.buy_price / exchange_price.ResponseResult.XAG.USD.sell_price ,1),
+          credit : 1
+        },
+        //3-Gold Coin to Gold Bar - New Price Calc Done
+        Gold_Goldbar : {
+          type : 3,
+          debit : round(exchange_price.ResponseResult.GBAR.USD.buy_price / exchange_price.ResponseResult.XAU.USD.sell_price ,1),
+          credit : 1
+        },
+        //4-Gold Coin to Silver Bar - New Price Calc Done
+        Gold_Silverbar :{
+          type : 4,
+          debit : round(exchange_price.ResponseResult.SBAR.USD.buy_price / exchange_price.ResponseResult.XAU.USD.sell_price ,1),
+          credit : 1
+        },
+        //5-Silver Coin to Gold Bar - New Price Calc Done
+        Silver_Goldbar :{
+          type : 5,
+          debit: round(exchange_price.ResponseResult.GBAR.USD.buy_price / exchange_price.ResponseResult.XAG.USD.sell_price ,1),
+          credit : 1
+        },
+        //6-Silver Coin to Silver Bar - New Price Calc Done
+        Silver_Silverbar :{
+          type : 6,
+          debit : round(exchange_price.ResponseResult.SBAR.USD.buy_price / exchange_price.ResponseResult.XAG.USD.sell_price ,1),
+          credit : 1
+        },
+        //7-Gold Bar to Gold Coin - New Price Calc Done
+        Goldbar_Gold :{
+          type : 7,
+          debit : 1,
+          credit : round(exchange_price.ResponseResult.GBAR.USD.sell_price / exchange_price.XAU.USD.buy_price ,1)
+        },
+        //8-Gold Bar to Silver Coin - New Price Calc Done
+        Goldbar_Silver :{
+          type : 8,
+          debit : 1,
+          credit : round(exchange_price.ResponseResult.GBAR.USD.sell_price / exchange_price.ResponseResult.XAG.USD.buy_price ,1)
+        },
+        //9-Gold Bar to Silver Bar - Not Required
+        Goldbar_Silverbar :{
+          type : 9,
+          debit : 1,
+          credit : round(exchange_price.ResponseResult.GBAR.USD.sell_price / exchange_price.ResponseResult.SBAR.USD.buy_price ,1)
+        },
+        //10-Silver Bar to Gold Coin - Not Required
+        Silverbar_Gold :{
+          type : 10,
+          debit : 1,
+          credit : round(exchange_price.ResponseResult.SBAR.USD.sell_price / exchange_price.ResponseResult.XAU.USD.buy_price ,1)
+        },
+        //11-Silver Bar to Silver Coin - New Price Calc Done
+        Silverbar_Silver :{
+          type : 11,
+          debit : 1,
+          credit : round(exchange_price.ResponseResult.SBAR.USD.sell_price / exchange_price.ResponseResult.XAG.USD.buy_price ,1)
+        },
+        //12-Silver Bar to Gold Bar - Not Required
+        Silverbar_Goldbar :{
+          type : 12,
+          debit : round(exchange_price.ResponseResult.GBAR.USD.buy_price / exchange_price.ResponseResult.SBAR.USD.sell_price ,1),
+          credit :1
+        }
+    };
+
+      if (account_result.ResponseResult.Gold) {
+        account_result.ResponseResult.Gold.AvailableBalance = numberFormatter(account_result.ResponseResult.Gold.AvailableBalance ,2);
+      }
+      if (account_result.ResponseResult.Silver){
+        account_result.ResponseResult.Silver.AvailableBalance = numberFormatter(account_result.ResponseResult.Silver.AvailableBalance ,2);
+      }
+      if (account_result.ResponseResult.Goldbar) {
+        account_result.ResponseResult.Goldbar.AvailableBalance = numberFormatter(floor(account_result.ResponseResult.Goldbar.AvailableBalance / process.env.CONVERSION_KG_OZ_VALUE * 100) / 100 ,2);
+      }
+      if (account_result.ResponseResult.Silverbar) {
+        account_result.ResponseResult.Silverbar.AvailableBalance = numberFormatter(floor(account_result.ResponseResult.Silverbar.AvailableBalance / process.env.CONVERSION_KG_OZ_VALUE * 100) / 100 ,2);
+      }
+
+      console.log('token');
+      console.log('exchange_price');
+      console.log('account_result');
+      console.log('exchange_conversion_arr');
+      console.log('bar_account_info');
+
+      this.data = {
+        profile_result : this.$store.commit('setProfile'),
+        account_result : account_result,
+        conversion_rates : exchange_conversion_arr,
+        bar_account_info : bar_account_info
+      }
+
+      this.$store.commit('setLoadingContent',false);
+    }
+  }
 }
 </script>
 

@@ -451,9 +451,11 @@ export default {
         this.$store.commit('setCardCurrency', balance_result.ResponseResult.Card.Currency);
         final_result = {
           ...final_result,
-          currency: balance_result.ResponseResult.Card.Currency,
-          balance: balance_result.ResponseResult.Card.AvailableBalance,
-          title: 'MasterCard'
+          card: {
+            currency: balance_result.ResponseResult.Card.Currency,
+            balance: balance_result.ResponseResult.Card.AvailableBalance,
+            title: 'MasterCard'
+          }
         }
       }
       this.data = {

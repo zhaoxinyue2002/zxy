@@ -12,7 +12,7 @@ $debit_dropdown_array = array(
 );
 $default_currency = (null !== $this->session->userdata('app_currency')) ? $this->session->userdata('app_currency') : 'EUR';
 ?> -->
-<form action="#" method="post" name="frm-make-transfer-btw-users" id="frm-make-transfer-btw-users">
+<form action="#" method="post" name="frm-make-transfer-btw-users" id="frm-make-transfer-btw-users" v-if="this.$store.state.loadingContent == false && this.data != null">
   <!-- Default View -->
   <div class="transfer-b-acc-form-view">
     <div id="msg_block" class="input-field col s12">
@@ -306,7 +306,24 @@ $default_currency = (null !== $this->session->userdata('app_currency')) ? $this-
 
 <script>
 export default {
+    data(){
+      return{
+        data : null
+      }
+    },
+    mounted() {
+      this.$store.commit('setLodingContent',true);
+      this.fetchData();
+    },
+    components:{},
+    methods: {
+      async fetchData() {
+        console.log('fetchData');
+        var receiver_account_info = await this.$api.$post('getAllAccountsAllCards');
 
+        this.$store.commit('setLoadingContent', false);
+      }
+    }
 }
 </script>
 

@@ -67,6 +67,7 @@
                                             {{ data.balance_result.goldbar.account_no }}
                                             </td>
                                           <td id="lbl_gold_bar_market_price">
+                                            <!-- {{getCurrencySymbol(this.$store.state.app_currency)}} {{numberFormatter(data.gold_bar_per_market_price,2)}} -->
                                             <!-- <?php echo $this->currency_symbol_arr[$this->session->userdata('app_currency')] . ' ' . number_format((float)$gold_bar_per_market_price, 2, '.', ','); ?> -->
                                             €2</td>
                                           <td id="lbl_gold_bar_qty"><!-- <?php echo number_format((float)$balance_result['goldbar']['balance'], 2, '.', ','); ?> -->3</td>
@@ -261,10 +262,10 @@ export default {
       var body = new FormData();
       body.append('username','yang@goldensuisse.com');
       var balance_result = await this.$api.$post('getBalance',body);
-      console.log(balance_result);
+      // console.log(balance_result);
 
       var currency_result = await this.$api.$get('exchange_price/type_based');
-      console.log(currency_result);
+      // console.log(currency_result);
 
       var default_currency = this.$store.state.app_currency;
       var total_balance = 0;
@@ -297,6 +298,7 @@ export default {
       }
       //Silver Eagle
       var final_result = {
+        ...final_result,
           silver:{
             account_no: balance_result.ResponseResult.Silver.AccountNumber,
             balance: 1 * balance_result.ResponseResult.Silver.AvailableBalance,
